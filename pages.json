@@ -39,7 +39,7 @@
 		{
 			"path": "pages/search/search",
 			"style": {
-				"navigationBarTitleText": "景点搜索"
+				"navigationBarTitleText": "搜索"
 			}
 		},
 		{

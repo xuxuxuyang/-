@@ -187,71 +187,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 var _default =
-
 {
   name: 'searched',
   data: function data() {
     return {
       searchdata: '',
-      // 搜索历史
-      setdata: [],
-      ifhistory: false, // 是否有搜索历史
+      setdata: [], // 搜索历史
+      ifhistory: false, // 控制搜索历史是否显示
       localdata: [], //搜索结果
-      nonedata: false //没有数据的提示
+      nonedata: false //控制没有数据的提示
     };
   },
   methods: {
-    // 搜索历史
+    // 点击搜索过的历史
     menubtn: function menubtn(name) {
-      // 发起搜索隐藏搜索历史
-      this.ifhistory = false;
-      // 调用数据库搜索
-      this.searchData(name);
+      this.ifhistory = false; // 发起搜索隐藏搜索历史
+      this.searchData(name); // 调用数据库搜索
     },
     // 键盘的搜索
     onKeyInput: function onKeyInput(e) {
-      var searchkey = e.detail.value;
+      var searchkey = e.detail.value; //获取键盘输入的值
       if (searchkey != "") {
-        // 发起搜索隐藏搜索历史
-        this.ifhistory = false;
-        this.getStorage(searchkey);
-        // 调用数据库搜索
-        this.searchData(searchkey);
+        this.getStorage(searchkey); //把搜索历史存入本地储存数组
+        this.searchData(searchkey); // 调用数据库搜索
+        this.ifhistory = false; // 发起搜索隐藏搜索历史
       }
     },
     // 发起搜索
     seArch: function seArch() {
-      // 存储在本地缓存
       if (this.searchdata != '') {
-        // 发起搜索隐藏搜索历史
-        this.ifhistory = false;
-        var searchkey = this.searchdata;
-        this.getStorage(searchkey);
-        // 调用数据库搜索
-        this.searchData(searchkey);
+        this.ifhistory = false; // 发起搜索 隐藏搜索历史
+        var searchkey = this.searchdata; //获取输入的搜索
+        this.getStorage(searchkey); //存储搜索到本地缓存
+        this.searchData(searchkey); // 请求搜索数据
       }
     },
-    // 本地缓存
+    // 存入本地缓存数组方法
     getStorage: function getStorage(searchkey) {
-      var seararray = uni.getStorageSync('search_key') || [];
-      seararray.unshift(searchkey);
-      uni.setStorageSync('search_key', seararray);
+      var seararray = uni.getStorageSync('search_key') || []; //有历史值就取出 没有就设置一个默认值
+      seararray.unshift(searchkey); //将新数据添加到数组的开头：
+      uni.setStorageSync('search_key', seararray); //本地储存
     },
-    // 取出本地缓存
+    // 取出本地缓存方法
     setStorage: function setStorage() {
       var setdata = uni.getStorageSync('search_key');
-      var setdataarr = Array.from(new Set(setdata));
+      //Array.from()方法就是将一个类数组对象或者可遍历对象转换成一个真正的数组 
+      var setdataarr = Array.from(new Set(setdata)); //Set 对象存储的值总是唯一的
       if (setdataarr == '') {
-        this.ifhistory = false;
+        this.ifhistory = false; //隐藏搜索历史
       } else {
-        this.setdata = setdataarr;
-        this.ifhistory = true;
+        this.setdata = setdataarr; //赋值给搜索历史
+        this.ifhistory = true; //显示搜索历史
       }
     },
-    // 清除缓存
+    // 清除缓存方法
     removeStorage: function removeStorage() {
       uni.removeStorageSync('search_key');
-      this.setStorage();
+      this.setStorage(); //再次调用取出本地缓存方法 更新界面
     },
     // 请求数据库
     searchData: function searchData(searchkey) {var _this = this;
@@ -279,17 +271,14 @@ var _default =
         console.log(err);
       });
     },
-    // 跳转到详情页
     localCont: function localCont(id) {
       uni.navigateTo({
-        url: '../details/details?id=' + id });
-
+        url: '../details/details?id=' + id // 跳转到详情页
+      });
     } },
 
-
-  //进入页面 获取历史搜素
   created: function created() {
-    this.setStorage();
+    this.setStorage(); //进入页面 获取历史搜素
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

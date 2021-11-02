@@ -187,24 +187,21 @@ var messdatabase = db.collection('message');var _default =
 
   data: function data() {
     return {
-      showAbs: true,
-      styleObject: 0,
-      detaildata: {},
-      leaveword: [],
-      // 分类留言
-      messageword: [],
-      nonedata: false,
+      showAbs: true, //控制nav导航栏的显示
+      styleObject: 0, //实时控制动态样式 透明度
+      detaildata: {}, //具体留言数据
+      leaveword: [], //留言数据数组
+      messageword: [], // 百度ai留言分类数组
+      nonedata: false, //控制留言数据为空提示
       detaid: '', //列表页传过来的id
-      homeload: true };
-
+      homeload: true //控制进入页面等待的loding
+    };
   },
-
   methods: {
     handleScroll: function handleScroll(top) {
       if (top > 90) {
         var opacity = top / 170;
         opacity = opacity > 1 ? 1 : opacity;
-        // console.log(opacity)
         this.styleObject = opacity;
         this.showAbs = false;
       } else {
@@ -218,19 +215,18 @@ var messdatabase = db.collection('message');var _default =
 
       get().
       then(function (res) {
-        // 赋值筛选到的数据
-        var shopid = { shopid: res.data[0]._id };
+        var shopid = { shopid: res.data[0]._id }; //拿到数据id
+        //Object.assign()接口可以接收多个参数，第一个参数是目标对象，后面的都是源对象，assign方法将多个原对象的属性和方法都合并到了目标对象上面，
+        //如果在这个过程中出现同名的属性（方法），后合并的属性（方法）会覆盖之前的同名属性（方法）
         var obgdata = Object.assign(res.data[0].wholedata, shopid);
-        _this.detaildata = obgdata;
-        _this.homeload = false;
-
+        _this.detaildata = obgdata; //具体留言数据赋值新对象
+        _this.homeload = false; //获取到数据后 隐藏页面loding
       }).
       catch(function (err) {
         console.log(err);
       });
     },
-
-    // 留言数据
+    // 请求留言数据
     messagedata: function messagedata(id) {var _this2 = this;
       messdatabase.where({
         id: id }).
@@ -239,17 +235,14 @@ var messdatabase = db.collection('message');var _default =
       get().
       then(function (res) {
         var resdata = res.data;
-        // 取出ai分类数据
-        _this2.classData(resdata);
-        // 取出留言列表
-        _this2.publicMess(resdata);
+        _this2.classData(resdata); // 调用处理数组ai分类方法
+        _this2.publicMess(resdata); // 调用请求具体留言方法
       }).
       catch(function (err) {
         console.log(err);
       });
     },
-
-    // 子组件ai tab分类查询留言的数据
+    // ai tab分类精准查询留言数据方法
     querymessage: function querymessage(ceshi, item) {var _this3 = this;
       messdatabase.where({
         id: ceshi,
@@ -265,68 +258,60 @@ var messdatabase = db.collection('message');var _default =
         console.log(err);
       });
     },
-
-    // 公用map查询分类留言数据
+    // 获取分类留言数据
     publicMess: function publicMess(resdata) {
       var leaveword = resdata.map(function (item) {
         return item.messagedata;
       });
-      this.leaveword = leaveword;
-      // 如果留言列表为空，给予提示
+      this.leaveword = leaveword; //赋值具体留言数据数组
       if (leaveword.length === 0) {
-        this.nonedata = true;
+        this.nonedata = true; // 如果留言列表为空，给予提示
       } else {
         this.nonedata = false;
       }
     },
     // 取出ai分类留言数据
     classData: function classData(resdata) {
-      var messageword = resdata.map(function (item) {
+      var messageword = resdata.map(function (item) {//map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
         return item.classmessage;
       });
-      // 数组去重
-      var newarr = Array.from(new Set(messageword));
-      // 数组去空值
-      var newArr = newarr.filter(function (item) {return item;});
-      this.messageword = newArr;
+      var newarr = Array.from(new Set(messageword)); // 数组去重
+      var newArr = newarr.filter(function (item) {return item;}); // 数组去空值
+      this.messageword = newArr; //数组全部处理后赋值
     },
-    // 描点链接
+    // 描点链接滚动方法
     pageScroll: function pageScroll(deta) {
       var query = this.createSelectorQuery();
       query.select(deta).boundingClientRect();
       query.selectViewport().scrollOffset();
       query.exec(function (res) {
-        if (res[0] && res[1]) {
+        if (res[0] && res[1]) {// res[0].top       // 绑定节点距离上边界坐标 // res[1].scrollTop // 显示区域的竖直滚动位置
           uni.pageScrollTo({
             scrollTop: res[0].top + res[1].scrollTop - 35,
-            duration: 300 });
-
+            duration: 300 //过渡时间
+          });
         }
       });
     },
     // 被子组件调用，请求分类留言数据
     fatherMethod: function fatherMethod(item) {
       if (item == "全部") {
-        // 请求留言
-        this.messagedata(this.detaid);
+        this.messagedata(this.detaid); // 请求所有留言
       } else {
-        // ai分类tab数据
-        this.querymessage(this.detaid, item);
+        this.querymessage(this.detaid, item); // 点击ai分类tab精准请求数据
       }
     } },
 
-  // 2.监听页面滚动距离scrollTop
+  // 监听页面滚动距离scrollTop
   onPageScroll: function onPageScroll(e) {
-    var top = e.scrollTop;
-    this.handleScroll(top);
+    var top = e.scrollTop; //取到实时滚动距离
+    this.handleScroll(top); //滚动实时调用控制class实现渐变效果
   },
   // 接收列表页的参数
   onLoad: function onLoad(e) {
     this.detaid = e.id;
-    // 请求数据库数据{图文列表，轮播图}
-    this.detailreq(this.detaid);
-    // 请求留言
-    this.messagedata(this.detaid);
+    this.detailreq(this.detaid); // 携带id精准请求数据库数据
+    this.messagedata(this.detaid); // 携带id精准请求请求此商品的留言
   },
   // 描点链接
   computed: _objectSpread(_objectSpread({},
@@ -334,10 +319,10 @@ var messdatabase = db.collection('message');var _default =
     bannervuex: function bannervuex() {
       if (this.navindex.index === 1) {
         var details = '.matter-page';
-        this.pageScroll(details);
+        this.pageScroll(details); //调用描点链接滚动方法
       } else if (this.navindex.index === 2) {
         var message = '.message-page';
-        this.pageScroll(message);
+        this.pageScroll(message); //调用描点链接滚动方法
       }
     } }) };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

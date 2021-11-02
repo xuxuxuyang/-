@@ -145,22 +145,19 @@ var _default =
   },
   methods: {
     navbtn: function navbtn(index) {
-      this.num = index;
-      if (index === 0) {
+      this.num = index; //控制是否加上样式
+      if (index === 0) {//点击第一位
         this.backTop();
       }
-      // vuex传值到banner页面
       if (index != 0) {
-        this.$store.dispatch('navdata', index);
+        this.$store.dispatch('navdata', index); // vuex传值到banner页面
       }
     },
-    // 宝贝
+    // 点击回到顶部
     backTop: function backTop() {
-      if (wx.pageScrollTo) {
-        wx.pageScrollTo({
-          scrollTop: 0 });
+      wx.pageScrollTo({
+        scrollTop: 0 });
 
-      }
     } } };exports.default = _default;
 
 /***/ }),
