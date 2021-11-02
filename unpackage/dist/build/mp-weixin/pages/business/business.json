@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "景点详情",
+  "usingComponents": {
+    "navs": "/pages/business/components/navs",
+    "banner": "/pages/business/components/banner",
+    "businessing": "/pages/business/components/businessing",
+    "matter": "/pages/business/components/matter",
+    "message": "/pages/business/components/message",
+    "shopping": "/pages/business/components/shopping"
+  }
+}

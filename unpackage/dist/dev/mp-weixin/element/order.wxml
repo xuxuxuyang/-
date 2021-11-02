@@ -1,0 +1,1 @@
+<block wx:if="{{odermin}}"><view class="nonedata data-v-c74d4b46"><image src="../static/tab/gouwuche.png" mode="widthFix" class="data-v-c74d4b46"></image><text class="data-v-c74d4b46">{{orderdata}}</text></view></block>

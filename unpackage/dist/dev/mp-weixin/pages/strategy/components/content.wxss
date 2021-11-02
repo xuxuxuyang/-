@@ -1,0 +1,77 @@
+/* flex内容区 */
+.active.data-v-1d06aeb3 {
+	margin: 0 20rpx;
+}
+.conteng.data-v-1d06aeb3 {
+	display: flex;
+	flex-wrap: warp;
+	justify-content: space-between;
+	width: 100%;
+	-webkit-flex-wrap: wrap;
+	overflow: hidden;
+}
+.conteng-article.data-v-1d06aeb3 {
+	width: 48%;
+	flex-direction: column;
+	display: flex;
+	box-sizing: border-box;
+}
+.purchase.data-v-1d06aeb3 {
+	display: flex;
+	align-items: center;
+	padding-bottom: 10rpx;
+}
+.conteng-img.data-v-1d06aeb3 {
+	height: 400rpx !important;
+	object-fit: cover;
+	overflow: hidden;
+}
+.conteng-img image.data-v-1d06aeb3 {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover;
+	border-radius: 10rpx;
+}
+.active-name.data-v-1d06aeb3 {
+	font-size: 32rpx;
+	color: #d0b083;
+	margin: 10rpx 0;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.active-title.data-v-1d06aeb3 {
+	font-size: 32rpx;
+	color: #444444;
+	font-weight: bold;
+	line-height: 50rpx;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	height: 100rpx !important;
+}
+.active-label.data-v-1d06aeb3 {
+	font-size: 25rpx;
+	color: #d0b083;
+	padding: 10rpx 0;
+}
+.active-price.data-v-1d06aeb3 {
+	font-size: 36rpx;
+	color: #ff6b28;
+	padding-right: 9rpx;
+}
+.active-purchase.data-v-1d06aeb3 {
+	font-size: 30rpx;
+	color: #cacaca;
+}
+.active-introduce.data-v-1d06aeb3 {
+	padding-left: 10rpx;
+}
+.newing.data-v-1d06aeb3{padding-bottom: 30rpx;}
+/* 用户头像 */
+.userinfo image.data-v-1d06aeb3{width: 50rpx; height: 50rpx; border-radius: 50rpx;}
+.userinfo text.data-v-1d06aeb3{padding-left: 20rpx;}
+.userinfo.data-v-1d06aeb3{padding-top: 20rpx;}
+

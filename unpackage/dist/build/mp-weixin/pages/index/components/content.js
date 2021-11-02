@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/components/content"],{"3f49":function(t,n,e){},4444:function(t,n,e){"use strict";e.r(n);var a=e("f690"),o=e.n(a);for(var i in a)"default"!==i&&function(t){e.d(n,t,function(){return a[t]})}(i);n["default"]=o.a},"5b38":function(t,n,e){"use strict";var a=e("3f49"),o=e.n(a);o.a},b18b:function(t,n,e){"use strict";var a=function(){var t=this,n=t.$createElement;t._self._c},o=[];e.d(n,"a",function(){return a}),e.d(n,"b",function(){return o})},b49a:function(t,n,e){"use strict";e.r(n);var a=e("b18b"),o=e("4444");for(var i in o)"default"!==i&&function(t){e.d(n,t,function(){return o[t]})}(i);e("5b38");var l=e("2877"),r=Object(l["a"])(o["default"],a["a"],a["b"],!1,null,"e07d7a80",null);n["default"]=r.exports},f690:function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var a=e("303d"),o={name:"cont",props:{tab:Array},data:function(){return{num:"",contentdata:[{title:"推荐",labei:"猜你喜欢"},{title:"好景点",labei:"周末放空"},{title:"人文",labei:"文化之旅"},{title:"海岛",labei:"阳光与沙滩"},{title:"自由行",labei:"超值精选"},{title:"情侣",labei:"别样的浪漫"},{title:"网红",labei:"最火打卡地"}]}},methods:{tabs:function(t,n){var e=this;console.log(t),console.log(n),this.num=t;var o=!0,i=0,l=!1,r=!1,u="loading",c={loading:o,pageid:i,nav:n,uniload:l,nonedata:r,stateload:u};this.$store.commit("navmuta",c);var s="Commodity",f=n,d=0;(0,a.homelist)(s,f,d).then(function(t){if(console.log(t),0===t.data.length){var n=!0;e.$store.commit("nonemuta",n)}else{var a=!1;e.$store.commit("nonemuta",a)}var o=t.data;e.$store.commit("listmuta",o);var i=!1;e.$store.commit("loadmuta",i)}).catch(function(t){console.log(t)})}}};n.default=o}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pages/index/components/content-create-component',
+    {
+        'pages/index/components/content-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("b49a"))
+        })
+    },
+    [['pages/index/components/content-create-component']]
+]);                

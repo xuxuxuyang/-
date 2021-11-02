@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "攻略",
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "address": "/pages/strategy/components/address",
+    "locality": "/pages/strategy/components/locality",
+    "content": "/pages/strategy/components/content"
+  }
+}

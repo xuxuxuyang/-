@@ -1,0 +1,1 @@
+<view class="data-v-22c33d9a"><view class="navs data-v-22c33d9a"><block wx:for="{{navalue}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block class="data-v-22c33d9a"><text data-event-opts="{{[['tap',[['navbtn',[index]]]]]}}" class="{{['data-v-22c33d9a',(index==num)?'navactivetext':'']}}" bindtap="__e">{{item.name}}</text></block></block></view></view>

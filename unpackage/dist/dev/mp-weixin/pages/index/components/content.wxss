@@ -1,0 +1,35 @@
+
+.activea.data-v-c5681054 {
+	color: #292c33 !important;
+	font-size: 31rpx !important;
+}
+.activeb.data-v-c5681054 {
+	color: #292c33 !important;
+	font-size: 23rpx !important;
+}
+.active.data-v-c5681054 {
+	background-image: linear-gradient(to right, #ccffff 0%, #ffcc00 100%);
+	border-top-right-radius: 50rpx;
+}
+.scroll.data-v-c5681054{ white-space: nowrap;
+	width: 100%;
+	position: absolute; left: 0; right: 0;
+	background: #FFFFFF;
+	padding: 20rpx 0;
+}
+.con-text-a.data-v-c5681054 {
+	color: #292c33;
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.con-text-b.data-v-c5681054 {
+	color: #9ea0a5;
+	font-size: 23rpx;
+}
+.list-cont.data-v-c5681054 {
+	width: 180rpx;
+	display: inline-block;
+	text-align: center;
+}
+
+

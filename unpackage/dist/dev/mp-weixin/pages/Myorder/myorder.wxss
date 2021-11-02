@@ -1,0 +1,48 @@
+
+.myorder-view.data-v-e6ced9a8{padding: 10rpx; margin: 10rpx; background: rgb(255, 255, 255);
+border-radius: 20rpx;}
+/* 旅行社 */
+.Agency.data-v-e6ced9a8{height: 90rpx; display: flex; justify-content: space-between;
+align-items: center;
+font-size: 30rpx;
+}
+.Agency image.data-v-e6ced9a8{width: 40rpx !important; height: 40rpx !important; border-radius: 50%;}
+.Agency-img.data-v-e6ced9a8{display: flex; align-items: center;}
+.Agency-img text.data-v-e6ced9a8{padding-left: 10rpx;}
+.Agency-text.data-v-e6ced9a8{color: red;}
+.Price-view.data-v-e6ced9a8{display: flex; justify-content: flex-end;
+ align-items: center;
+ font-size:28rpx;
+height: 90rpx;}
+.content-view.data-v-e6ced9a8{display: flex; justify-content: space-between;
+height: 200rpx !important; overflow: hidden;
+padding:5rpx;
+}
+.content-img.data-v-e6ced9a8{width: 300rpx !important; height: 200rpx !important;
+}
+.content-img image.data-v-e6ced9a8{width: 100%; height: 100%; border-radius: 6rpx;}
+.content-title.data-v-e6ced9a8{
+width: 100%;
+padding-left: 10rpx;
+}
+.content-title text.data-v-e6ced9a8:nth-child(1){
+	font-size: 30rpx;
+	font-weight: bold;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	padding-top: 0;
+	color: #333333;
+}
+.content-title text.data-v-e6ced9a8{
+	font-size: 28rpx;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	padding-top: 9rpx;
+	color: #a5a5a5;
+}
+
+

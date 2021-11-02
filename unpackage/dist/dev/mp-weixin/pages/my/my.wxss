@@ -1,0 +1,32 @@
+
+.myhome.data-v-0be17cc6{background: linear-gradient(to top, #ffe566 10%, #ffd300 100%); height: 350rpx; display: flex; align-items: center;}
+.wx-name image.data-v-0be17cc6{width: 120rpx !important; height: 120rpx !important; border-radius: 50%; margin-right: 20rpx;
+				border: 10rpx solid #999999;}
+text.data-v-0be17cc6{display: block; margin: 10rpx 0; color: #999999;}
+.wx-name.data-v-0be17cc6{display: flex; align-items: center; padding: 0 30rpx; align-content: center;
+		height: 200rpx;}
+.wx-text text.data-v-0be17cc6:nth-child(1){font-size: 35rpx;}
+.wx-text text.data-v-0be17cc6:nth-child(2){font-size: 20rpx; border: 1px solid #FFFFFF;
+							padding: 7rpx;
+							border-radius: 50rpx;
+							text-align: center;}
+/* 登录 */
+.wx-button button.data-v-0be17cc6{border: none;font-size: 30rpx; background: linear-gradient(to right, #28a6f1 10%, #0e8dd7 80%);
+ border-radius: 50rpx;
+color: #FFFFFF;}
+.wx-button-view.data-v-0be17cc6{font-size: 35rpx; color: #FFFFFF; margin-bottom: 25rpx;}
+.wx-button.data-v-0be17cc6{margin: 0 auto;}
+/* 列表 */
+.user-list.data-v-0be17cc6{background: #F8F8F8; display: flex; justify-content: space-around; text-align: center;
+margin: 20rpx; border-radius: 20rpx;
+height: 200rpx;
+align-items: center;}
+.user-list image.data-v-0be17cc6{width: 50rpx; height: 50rpx;}
+.user-list text.data-v-0be17cc6{font-size: 25rpx; display: block; color: #777777;}
+/* 感谢 */
+.Thankyou.data-v-0be17cc6{font-size: 20rpx; text-align: center;
+position: fixed;
+left: 0;
+right: 0;
+bottom: 30rpx;}
+

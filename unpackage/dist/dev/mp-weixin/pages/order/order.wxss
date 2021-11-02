@@ -1,0 +1,57 @@
+
+page{background: #f4f4f4;}
+.listmen{color: red;}
+.order-conter{
+margin: 15rpx;
+background: #FFFFFF; border-radius: 10rpx;
+font-size: 30rpx;
+padding: 10rpx;}
+/* 内容 */
+.order-title{display: flex; align-items: center;}
+.order-title image{width: 50rpx; height: 50rpx; border-radius: 6rpx;}
+.order-title text{font-weight: bold; padding-left: 8rpx;}
+.order-text{font-weight: bold; padding: 10rpx 0;}
+.detailed{display: flex; height: 50rpx;
+align-items: center;
+padding: 7rpx 0;}
+.detailed text:nth-child(1){ width: 170rpx;}
+.order-data{border-bottom: 1px dashed #e0e0e0;
+margin-bottom: 10rpx;
+}
+/* 联系人 */
+.Contacts{margin: 20rpx 15rpx; background: #FFFFFF; border-radius: 10rpx;
+font-size: 30rpx;
+padding: 10rpx;}
+.order-pople{font-weight: bold; padding: 20rpx 0 30rpx 0;}
+.cart-go{ display: flex;
+ align-items: center;
+ height: 80rpx;
+ border-top: 1rpx solid #F8F8F8;}
+.cart-go text{width: 200rpx; height: 50rpx;
+line-height: 50rpx;}
+.cart-go input{width: 100%;height: 50rpx;
+line-height: 50rpx;
+}
+.place{color: #d4d4d4;}
+/* 去付款 */
+.shopping{width: 100%; background: #ffffff;
+border-top: 1rpx solid #e5e5e5;
+position: fixed;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 99;
+}
+.shopdata{background: linear-gradient(to right, #ffc800 10%, #ff9602 80%);
+height: 80rpx; line-height: 80rpx; width: 300rpx;
+color: #ffffff;
+border-radius: 50rpx;
+font-weight: 100;
+}
+.shop-view{display: flex; justify-content: space-between; align-items: center;
+text-align: center;
+padding: 10rpx 20rpx;
+font-size: 30rpx;
+color: #ff5000;
+font-weight: bold;}
+

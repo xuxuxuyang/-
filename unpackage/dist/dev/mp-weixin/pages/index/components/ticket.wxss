@@ -1,0 +1,5 @@
+
+.ticket image{width: 90rpx; height: 90rpx;}
+.ticket{display: flex; justify-content: space-around; text-align: center; margin: 30rpx 0;}
+.ticket text{font-size: 30rpx; display: block;}
+

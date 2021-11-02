@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "h-mmessages": "/components/HM-messages/HM-messages",
+    "order": "/element/order"
+  }
+}
