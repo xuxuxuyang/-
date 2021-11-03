@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "飞猪旅游商家端",
+  "usingComponents": {
+    "stateing": "/element/stateing"
+  }
+}

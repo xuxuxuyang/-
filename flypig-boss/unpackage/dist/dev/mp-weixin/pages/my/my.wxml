@@ -1,0 +1,1 @@
+<view><block wx:if="{{!wxlogin}}"><login-list vue-id="704e9d00-1" bind:__l="__l"></login-list></block><block wx:if="{{wxlogin}}"><users vue-id="704e9d00-2" username="{{username}}" nothave="{{nothave}}" bind:__l="__l"></users></block></view>

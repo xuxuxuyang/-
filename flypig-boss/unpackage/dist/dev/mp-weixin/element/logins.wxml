@@ -1,0 +1,1 @@
+<view class="wx-button data-v-5d3d032b"><view class="wx-button-view data-v-5d3d032b"><image src="../static/img/tou.png" mode="widthFix" class="data-v-5d3d032b"></image></view><view class="data-v-5d3d032b"><button plain="true" open-type="getUserInfo" data-event-opts="{{[['tap',[['getUserInfo']]]]}}" bindtap="__e" class="data-v-5d3d032b">登录商家版</button></view></view>

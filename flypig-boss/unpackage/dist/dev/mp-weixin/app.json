@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/release/release",
+        "pages/my/my",
+        "pages/authentication/authentication"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "飞猪旅游商家版",
+        "navigationBarBackgroundColor": "#ffd300",
+        "backgroundColor": "#ffd300"
+    },
+    "tabBar": {
+        "color": "#333333",
+        "selectedColor": "#F76E15",
+        "borderStyle": "black",
+        "backgroundColor": "#FFFFFF",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "static/img/dianpub.png",
+                "selectedIconPath": "static/img/dianpua.png",
+                "text": "我的店铺"
+            },
+            {
+                "pagePath": "pages/release/release",
+                "iconPath": "static/img/fabub.png",
+                "selectedIconPath": "static/img/fabua.png",
+                "text": "发布商品"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "static/img/wodea.png",
+                "selectedIconPath": "static/img/wodeb.png",
+                "text": "商家中心"
+            }
+        ]
+    },
+    "permission": {},
+    "usingComponents": {
+        "login-list": "/element/logins"
+    },
+    "sitemapLocation": "sitemap.json"
+}

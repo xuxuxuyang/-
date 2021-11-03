@@ -1,0 +1,1 @@
+<block wx:if="{{modaishow}}"><view class="data-v-79edf0f2"><view class="stateing data-v-79edf0f2"><image src="{{staimg}}" mode="widthFix" class="data-v-79edf0f2"></image><text class="data-v-79edf0f2">{{title}}</text></view></view></block>
