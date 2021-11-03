@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/city/city"],{
 
 /***/ 62:
-/*!*****************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/main.js?{"page":"pages%2Fcity%2Fcity"} ***!
-  \*****************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/main.js?{"page":"pages%2Fcity%2Fcity"} ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_city.default);
 /***/ }),
 
 /***/ 63:
-/*!**********************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue ***!
-  \**********************************************************************/
+/*!************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,9 +58,9 @@ component.options.__file = "pages/city/city.vue"
 /***/ }),
 
 /***/ 64:
-/*!*****************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue?vue&type=template&id=5fb12034&scoped=true& ***!
-  \*****************************************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue?vue&type=template&id=5fb12034&scoped=true& ***!
+  \*******************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -80,9 +80,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 65:
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue?vue&type=template&id=5fb12034&scoped=true& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue?vue&type=template&id=5fb12034&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -107,9 +107,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 66:
-/*!***********************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -123,9 +123,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 67:
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -234,70 +234,49 @@ var _list = __webpack_require__(/*! ../../common/list.js */ 30);function _toCons
 var QQMapWX = __webpack_require__(/*! ../../common/qqmap-wx-jssdk.min.js */ 68); // 实例化API核心类
 var qqmapsdk = new QQMapWX({ key: 'RIKBZ-CCMLS-6KEOA-6EVQ4-5U3BV-VNFA5' // 必填
 }); // 引入定位
-var _default = { data: function data() {return { citynone: true, keywords: '', // 搜索的城市
-      citydata: [], // 定位的城市
-      address: '', // 取到从某个页面过来的
-      pageroute: '', city: [{ "name": '丰城市' }, { "name": '南昌市' }, { "name": '广州市' }, { "name": '九江市' }, { "name": '贵州市' }, { "name": '刘佳美市' }, { "name": '杭州市' }] };}, methods: { // 隐藏城市
-    searchCity: function searchCity(e) {this.citynone = false;this.citydata = '';}, // 关闭搜索
-    canCel: function canCel() {this.citynone = true;this.keywords = '';}, // 输入城市获取地点
-    searchInput: function searchInput(e) {var _this = this;this.keywords = e.detail.value; //调用关键词提示接口
-      qqmapsdk.getSuggestion({ //获取输入框值并设置keyword参数
+var _default = { data: function data() {return { citynone: true, //控制显示定位城市
+      keywords: '', //输入的搜索数据
+      citydata: [], // 搜索的城市名+部分具体地名
+      address: '', // 定位的城市
+      pageroute: '', // 取到从某个页面过来的
+      city: [{ "name": '丰城市' }, { "name": '南昌市' }, { "name": '广州市' }, { "name": '九江市' }] };}, methods: { // 点击获取焦点后触发的方法
+    searchCity: function searchCity(e) {this.citynone = false; //隐藏当前定位和可选城市
+      this.citydata = '';}, // 取消搜索触发的方法
+    canCel: function canCel() {this.citynone = true; //显示当前定位和可选城市
+      this.keywords = ''; //清空输入框
+    }, // 输入搜索触发的获取定位方法
+    searchInput: function searchInput(e) {var _this = this;this.keywords = e.detail.value; //实时拿到输入的数据
+      qqmapsdk.getSuggestion({ //调用关键词提示接口
         keyword: e.detail.value, //用户输入的关键词，可设置固定值,如keyword:'KFC'
         success: function success(res) {//搜索成功后的回调
-          var city = res.data; // 取出城市名
-          var thecity = res.data[0].city;var citydata = city.map(function (item) {return item.title;});
-          var allcity = [thecity].concat(_toConsumableArray(citydata));
-          _this.citydata = allcity;
-
-        },
-        fail: function fail(error) {
-          console.error(error);
-        } });
-
-    },
-    // 定位
-    addRess: function addRess() {var _this2 = this;
-      // 定位
-      (0, _list.addressdata)().
-      then(function (res) {
-        var city = res.result.ad_info.city;
-        _this2.address = city;
-      }).
-      catch(function (err) {
-        _this2.address = '丰城市';
-      });
-    },
-    // 点击当前定位取到城市
-    clickCicy: function clickCicy() {
-      var cityion = this.address;
-      this.rouTes(cityion);
-    },
-    // 取到热门城市
+          var city = res.data;var thecity = res.data[0].city; // 拿到定位的城市名
+          var citydata = city.map(function (item) {return item.title; //筛选出定位的具体地名
+          });var allcity = [thecity].concat(_toConsumableArray(citydata)); //数组设置为 城市名+部分具体地名
+          _this.citydata = allcity; //赋值筛选定位数组
+        }, fail: function fail(error) {console.error(error);} });}, // 定位方法
+    addRess: function addRess() {var _this2 = this;(0, _list.addressdata)().then(function (res) {var city = res.result.ad_info.city;_this2.address = city;}).catch(function (err) {_this2.address = '丰城市';});}, // 点击当前定位取到的城市
+    clickCicy: function clickCicy() {var cityion = this.address;this.rouTes(cityion);}, // 点击定位热门城市
     hotCity: function hotCity(item) {
       this.rouTes(item);
     },
-    // 用户搜索的城市
+    // 点击用户搜索的筛选出的城市+部分具体地名
     seekCity: function seekCity(item) {
       this.rouTes(item);
     },
     // 返回上一个页面
     rouTes: function rouTes(cityion) {
-      // 判断用户是否从发帖页面进入
-      if (this.pageroute == "pages/travels/travels") {
-        // 传值到vuex,这是传给发帖页面的
-        this.$store.commit('travemuta', cityion);
+      if (this.pageroute == "pages/travels/travels") {// 判断用户是否从发帖页面进入
+        this.$store.commit('travemuta', cityion); // 传值到vuex,这是传给发帖页面的
       } else {
-        // 传值到vuex,这是传给攻略页面的
-        this.$store.commit('citymuta', cityion);
+        this.$store.commit('citymuta', cityion); // 传值到vuex,这是传给攻略页面的
       }
       wx.navigateBack({
         delta: 1 });
 
     } },
 
-  // 进入页面 开始定位
   mounted: function mounted() {
-    this.addRess();
+    this.addRess(); // 进入页面 开始定位
   },
   // 获取用户从哪个页面进入该页面
   onLoad: function onLoad() {
@@ -309,9 +288,9 @@ var _default = { data: function data() {return { citynone: true, keywords: '', /
 /***/ }),
 
 /***/ 69:
-/*!*******************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue?vue&type=style&index=0&id=5fb12034&scoped=true&lang=css& ***!
-  \*******************************************************************************************************************************/
+/*!*********************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue?vue&type=style&index=0&id=5fb12034&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -325,9 +304,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 70:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/city/city.vue?vue&type=style&index=0&id=5fb12034&scoped=true&lang=css& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/city/city.vue?vue&type=style&index=0&id=5fb12034&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

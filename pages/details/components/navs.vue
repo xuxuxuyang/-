@@ -33,15 +33,13 @@
 				if(index === 0){
 					this.backTop()
 				}
-				// vuex传值到banner页面
 				if(index != 0){
-					this.$store.dispatch('navdata', index)
+					this.$store.dispatch('navdata', index) // 把状态传到VueX 父组件实时监听 实现瞄点链接精准滚动
 				}
 			},
-			// 宝贝
+			// 点击滚动到顶部
 			backTop(){
 				if(wx.pageScrollTo){
-					// console.log(wx.pageScrollTo)
 					wx.pageScrollTo({
 						scrollTop:0
 					})

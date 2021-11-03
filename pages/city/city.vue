@@ -56,14 +56,11 @@
 	export default{
 		data() {
 			return {
-				citynone:true,
-				keywords:'',
-				// 搜索的城市
-				citydata:[],
-				// 定位的城市
-				address:'',
-				// 取到从某个页面过来的
-				pageroute:'',
+				citynone:true,//控制显示定位城市
+				keywords:'',//输入的搜索数据
+				citydata:[],// 搜索的城市名+部分具体地名
+				address:'',// 定位的城市
+				pageroute:'',// 取到从某个页面过来的
 				city: [
 					{
 						"name":'丰城市'
@@ -76,56 +73,42 @@
 					},
 					{
 						"name":'九江市'
-					},
-					{
-						"name":'贵州市'
-					},
-					{
-						"name":'刘佳美市'
-					},
-					{
-						"name":'杭州市'
 					}
 				],
 			}
 		},
 		methods:{
-			// 隐藏城市
+			// 点击获取焦点后触发的方法
 			searchCity(e){
-				this.citynone = false
+				this.citynone = false //隐藏当前定位和可选城市
 				this.citydata = ''
 			},
-			// 关闭搜索
+			// 取消搜索触发的方法
 			canCel(){
-				this.citynone = true
-				this.keywords = ''
+				this.citynone = true//显示当前定位和可选城市
+				this.keywords = '' //清空输入框
 			},
-			// 输入城市获取地点
+			// 输入搜索触发的获取定位方法
 			searchInput(e){
-				this.keywords = e.detail.value
-				    //调用关键词提示接口
-				    qqmapsdk.getSuggestion({
-				      //获取输入框值并设置keyword参数
+				this.keywords = e.detail.value //实时拿到输入的数据
+				    qqmapsdk.getSuggestion({ //调用关键词提示接口
 				      keyword: e.detail.value, //用户输入的关键词，可设置固定值,如keyword:'KFC'
 				      success: (res)=> {//搜索成功后的回调
 				        let city = res.data
-						// 取出城市名
-						let thecity = res.data[0].city
-						var citydata = city.map(function(item){
-							return item.title;
+						let thecity = res.data[0].city// 拿到定位的城市名
+						var citydata = city.map((item)=>{ 
+							return item.title;   //筛选出定位的具体地名
 						})
-						let allcity = [thecity,...citydata]
-						this.citydata = allcity
-				        
+						let allcity = [thecity,...citydata] //数组设置为 城市名+部分具体地名
+						this.citydata = allcity  //赋值筛选定位数组
 				      },
 				      fail: (error)=> {
 				        console.error(error);
 				      }
 				    });
 			},
-			// 定位
+			// 定位方法
 			addRess(){
-				// 定位
 				addressdata()
 				.then((res)=>{
 					let city = res.result.ad_info.city
@@ -135,39 +118,35 @@
 					this.address = '丰城市'
 				})
 			},
-			// 点击当前定位取到城市
+			// 点击当前定位取到的城市
 			clickCicy(){
 				let cityion = this.address
 				this.rouTes(cityion)
 			},
-			// 取到热门城市
+			// 点击定位热门城市
 			hotCity(item){
 				this.rouTes(item)
 			},
-			// 用户搜索的城市
+			// 点击用户搜索的筛选出的城市+部分具体地名
 			seekCity(item){
 				this.rouTes(item)
 			},
 			// 返回上一个页面
 			rouTes(cityion){
-				// 判断用户是否从发帖页面进入
-				if(this.pageroute == "pages/travels/travels"){
-					// 传值到vuex,这是传给发帖页面的
-					this.$store.commit('travemuta', cityion)
+				if(this.pageroute == "pages/travels/travels"){// 判断用户是否从发帖页面进入
+					this.$store.commit('travemuta', cityion)	// 传值到vuex,这是传给发帖页面的
 				}else{
-				// 传值到vuex,这是传给攻略页面的
-				this.$store.commit('citymuta', cityion)	
+				this.$store.commit('citymuta', cityion)	// 传值到vuex,这是传给攻略页面的
 				}
 				wx.navigateBack({
 					delta: 1
 				})
 			}
 		},
-		// 进入页面 开始定位
 		mounted() {
-			this.addRess()
+			this.addRess() // 进入页面 开始定位
 		},
-		// 获取用户从哪个页面进入该页面
+		 // 获取用户从哪个页面进入该页面
 		onLoad() {
 			let pages = getCurrentPages();
 			let prevpage = pages[pages.length - 2];

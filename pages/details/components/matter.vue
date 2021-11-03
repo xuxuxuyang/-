@@ -28,22 +28,16 @@
 			}
 		},
 		methods:{
-			videoErrorCallback(e){
-				console.log(e)
-			},
-			playcall(e){
-				console.log(e)
-			}
+			videoErrorCallback(e){},
+			playcall(e){}
 		},
 		watch:{
 			detaildata(newValue, oldValue){
 				if(newValue.staticvideo != ''){
-					console.log(newValue)
 					this.staticvideo = newValue.staticvideo
 					this.videoing = true
 				}else{
-					this.videoing = false
-					console.log('空')
+					this.videoing = false //没有视频就隐藏
 				}
 			}
 		}

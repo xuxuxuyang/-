@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/details/components/message"],{
 
 /***/ 233:
-/*!***************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue ***!
-  \***************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -42,9 +42,9 @@ component.options.__file = "pages/details/components/message.vue"
 /***/ }),
 
 /***/ 234:
-/*!**********************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue?vue&type=template&id=fa019e98&scoped=true& ***!
-  \**********************************************************************************************************************************/
+/*!************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue?vue&type=template&id=fa019e98&scoped=true& ***!
+  \************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64,9 +64,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 235:
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue?vue&type=template&id=fa019e98&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue?vue&type=template&id=fa019e98&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -119,9 +119,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 236:
-/*!****************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -135,9 +135,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 237:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -220,55 +220,30 @@ var users = db.collection('user');var _default =
 
   data: function data() {
     return {
-      // 禁掉发表按钮
-      btnlist: true,
-      num: 0,
-      Comment: '',
+      btnlist: true, // 禁掉发表按钮
+      num: 0, //控制分类的样式
+      Comment: '', //评价内容
       newmessage: [], //重组的的分类数组
       box: false, //隐藏评论框
-      avatarUrl: '', //用户头像昵称
-      nickName: '',
-      ids: '', //列表页的id，将上传到数据库
-      usermessage: [
-      {
-        'head': 'http://h.thexxdd.cn/video/postimg.jpg',
-        'name': '星星点灯',
-        'message': '一路体验很好 虽说是拼车只有一天时间 可是遇到都是很好说话的伙伴 司机兼摄影师小磊小哥哥又帅又负责，拍照技术还杠杠的，顶着大理能烤人的太阳一个个给我们拍照！五星好评没话说！附上美照嘿嘿 ps:运气好碰上了好天气，怎么拍都是大片范儿！' },
-
-      {
-        'head': 'http://h.thexxdd.cn/video/postimg.jpg',
-        'name': '星星点灯',
-        'message': '一路体验很好 虽说是拼车只有一天时间 可是遇到都是很好说话的伙伴 司机兼摄影师小磊小哥哥又帅又负责，拍照技术还杠杠的，顶着大理能烤人的太阳一个个给我们拍照！五星好评没话说！附上美照嘿嘿 ps:运气好碰上了好天气，怎么拍都是大片范儿！' },
-
-      {
-        'head': 'http://h.thexxdd.cn/video/postimg.jpg',
-        'name': '星星点灯',
-        'message': '一路体验很好 虽说是拼车只有一天时间 可是遇到都是很好说话的伙伴 司机兼摄影师小磊小哥哥又帅又负责，拍照技术还杠杠的，顶着大理能烤人的太阳一个个给我们拍照！五星好评没话说！附上美照嘿嘿 ps:运气好碰上了好天气，怎么拍都是大片范儿！' }] };
-
-
-
+      avatarUrl: '', //用户头像
+      nickName: '', //用户昵称
+      ids: '' //列表页的id
+    };
   },
   methods: {
     // 弹出评论框
     popup: function popup() {var _this = this;
-      // 登录在评论
-      users.get().
-      then(function (res) {
-        console.log(res);
-        // length == 0说明没有用户信息，没有登录，提示登录
-        if (res.data.length == 0) {
+      users.get() // 弹出评论框前查看是否登录
+      .then(function (res) {
+        if (res.data.length == 0) {// length == 0说明没有用户信息，没有登录，提示登录
           _this.$nextTick(function () {
             _this.$refs.mon.init();
           });
         } else {
-          // 已经登录
-          console.log('已经登录');
-          // 取到用户头像，昵称，oppenid暂存
           var usermen = res.data[0];
           _this.avatarUrl = usermen.avatarUrl;
           _this.nickName = usermen.nickName;
-          // 弹出评论框
-          _this.box = true;
+          _this.box = true; // 弹出评论框
         }
       }).
       catch(function (err) {
@@ -276,14 +251,11 @@ var users = db.collection('user');var _default =
       });
 
     },
-
-    // 隐藏评论框
+    // 取消评论隐藏评论框
     messcancel: function messcancel() {
       this.box = false;
-      // 取消留言清空留言框
-      this.Comment = '';
+      this.Comment = ''; //清空留言框
     },
-
     // 发表评论
     bTn: function bTn() {
       if (this.Comment == '') {
@@ -291,34 +263,23 @@ var users = db.collection('user');var _default =
         var icon = 'error';
         this.tips(tip, icon);
       } else {
-        console.log('可以提交');
         this.btnlist = false;
-        // 先提交到百度ai进行评论分类，成功后，在提交到数据库，
-        this.submit();
+        this.submit(); // 先提交到百度ai进行评论分类，成功后，在提交到数据库
       }
     },
-
     submit: function submit() {var _this2 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var stamess, classif, ali, _ref, prop, adj, _classif;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
 
-                  _this2.aiMessage());case 2:stamess = _context.sent;
-                console.log(stamess);if (!(
-                stamess.length === 0)) {_context.next = 11;break;}
-                console.log('不提交');
-                // 返回空就提交空的上去
-                classif = '';
-                // 提交到数据库
-                _context.next = 9;return _this2.messbase(classif);case 9:_context.next = 18;break;case 11:
+                  _this2.aiMessage());case 2:stamess = _context.sent;if (!(
+                stamess.length === 0)) {_context.next = 9;break;}
+                classif = ''; // 返回空就提交空的上去
+                _context.next = 7;return _this2.messbase(classif);case 7:_context.next = 14;break;case 9:
 
-                console.log(stamess[stamess.length - 1]);
                 ali = stamess[stamess.length - 1];_ref =
                 [ali.prop, ali.adj], prop = _ref[0], adj = _ref[1];
-                console.log(prop + adj);
-                _classif = prop + adj;
-                // 提交到数据库
-                _context.next = 18;return _this2.messbase(_classif);case 18:case "end":return _context.stop();}}}, _callee);}))();
+                _classif = prop + adj;_context.next = 14;return (
+                  _this2.messbase(_classif));case 14:case "end":return _context.stop();}}}, _callee);}))();
 
     },
-
     // 调用云函数，评论分类
     aiMessage: function aiMessage() {var _this3 = this;
       return new Promise(function (resolve, reject) {
@@ -329,7 +290,6 @@ var users = db.collection('user');var _default =
 
 
         then(function (res) {
-          console.log(res);
           var aidata = res.result.aimessage.items;
           resolve(aidata);
         }).
@@ -339,8 +299,6 @@ var users = db.collection('user');var _default =
       });
 
     },
-
-
     // 提交到数据库
     messbase: function messbase(classif) {var _this4 = this;
       return new Promise(function (resolve, reject) {
@@ -351,7 +309,6 @@ var users = db.collection('user');var _default =
           avatarUrl: _this4.avatarUrl,
           nickName: _this4.nickName };
 
-
         var mess = db.collection('message');
         mess.add({
           data: {
@@ -361,56 +318,44 @@ var users = db.collection('user');var _default =
 
 
         then(function (res) {
-          console.log(res);
           var tip = '留言成功';
           var icon = 'success';
           _this4.tips(tip, icon);
-          // 留言成功清空留言框
-          _this4.Comment = '';
+          _this4.Comment = ''; // 留言成功清空留言框
           _this4.btnlist = true;
-          // 子组件调用父组件方法
           var item = '全部';
-          _this4.$parent.fatherMethod(item);
+          _this4.$parent.fatherMethod(item); // 子组件调用父组件方法
         }).
         catch(function (err) {
           console.log('提交出错');
         });
       });
     },
-
     // 请求分类数据
     menubtn: function menubtn(index, item) {
-      console.log(item);
       this.num = index;
-      // 子组件调用父组件方法
-      this.$parent.fatherMethod(item);
+      this.$parent.fatherMethod(item); // 子组件调用父组件方法
     },
-
     // 提示框
     tips: function tips(tip, icon) {
       this.HMmessages.show(tip, { icon: icon, iconColor: "#ffffff", fontColor: "#ffffff", background: "rgba(102, 0, 51,.8)" });
     } },
 
-
   watch: {
     messageword: function messageword(newValue, oldValue) {
-      console.log(newValue);
       this.newmessage = ['全部'].concat(_toConsumableArray(newValue));
       this.num = 0;
-      console.log(this.newmessage);
     },
-    // 列表页的id，将上传到数据库
     detaid: function detaid(newValue, oldValue) {
-      console.log(newValue);
-      this.ids = newValue;
+      this.ids = newValue; // 列表页的id，将上传到数据库
     } } };exports.default = _default;
 
 /***/ }),
 
 /***/ 238:
-/*!************************************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue?vue&type=style&index=0&id=fa019e98&scoped=true&lang=css& ***!
-  \************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue?vue&type=style&index=0&id=fa019e98&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -424,9 +369,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 239:
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/message.vue?vue&type=style&index=0&id=fa019e98&scoped=true&lang=css& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/components/message.vue?vue&type=style&index=0&id=fa019e98&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

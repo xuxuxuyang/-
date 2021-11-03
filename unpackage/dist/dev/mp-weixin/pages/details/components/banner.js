@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/details/components/banner"],{
 
 /***/ 219:
-/*!**************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue ***!
-  \**************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -42,9 +42,9 @@ component.options.__file = "pages/details/components/banner.vue"
 /***/ }),
 
 /***/ 220:
-/*!*********************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue?vue&type=template&id=4c79db8f&scoped=true& ***!
-  \*********************************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue?vue&type=template&id=4c79db8f&scoped=true& ***!
+  \***********************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -64,9 +64,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 221:
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue?vue&type=template&id=4c79db8f&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue?vue&type=template&id=4c79db8f&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -91,9 +91,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 222:
-/*!***************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -107,15 +107,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 223:
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
 
 
 
@@ -191,60 +190,20 @@ var _list = __webpack_require__(/*! ../../../common/list.js */ 30); //
 //
 //
 //
-//
 // 引入公用预览图片
-var _default = { name: 'details', props: { detaildata: Object, leaveword: Array }, data: function data() {return { imgArray: [], navDatas: '', bannerindex: 0, num: 1, len: '', top: '', images: [{ 'img': 'https://img.alicdn.com/bao/uploaded/i2/3820299323/O1CN01PEqaH82Ijz1ZsaLxH_!!3820299323.jpg_640x640q30.jpg_.webp' }, { 'img': 'https://img.alicdn.com/bao/uploaded/i2/3820299323/O1CN01PHdAEV2Ijz1YzsqS0_!!3820299323.jpg_640x640q30.jpg_.webp' }, { 'img': 'https://img.alicdn.com/bao/uploaded/i3/3820299323/O1CN01s0kRQM2Ijz3SHKs3F_!!3820299323.jpg_640x640q30.jpg_.webp' }], imgvideo: [{ 'video': 'http://h.thexxdd.cn/list/yuanfang.mp4', img: [{ 'image': 'http://gw.alicdn.com/imgextra/i3/3820299323/TB2ZoDEfXkoBKNjSZFkXXb4tFXa_!!3820299323.jpg_q60.jpg_.webp' }, { 'image': 'http://gw.alicdn.com/imgextra/i3/3820299323/TB2ZoDEfXkoBKNjSZFkXXb4tFXa_!!3820299323.jpg_q60.jpg_.webp' }, { 'image': 'http://gw.alicdn.com/imgextra/i3/3820299323/TB2ZoDEfXkoBKNjSZFkXXb4tFXa_!!3820299323.jpg_q60.jpg_.webp' }] }] };
-
-
-
-
-  },
-  created: function created() {
-    console.log(this.imgvideo);
-    this.len = this.images.length;
-  },
-  mounted: function mounted() {
-    // 取到节点距离顶部的距离
-    // this.scTop()
-  },
-  methods: {
-    // 滚动到第几张图片
-    bannerfun: function bannerfun(e) {
-      this.bannerindex = e.detail.current;
-    },
-    // 预览图片
-    previmg: function previmg(index) {
-      // console.log(index)
-      var imglist = this.imgArray;
-      // var imglist = img.map((item)=>{
-      // 	return item
-      // })
-      // console.log(imglist)
-      (0, _list.preview)(index, imglist).
-      then(function (res) {
-        console.log(res);
-      }).
-      catch(function (err) {
-        console.log(err);
-      });
-    } },
-
-
-
-
-  watch: {
-    detaildata: function detaildata(newValue, oldValue) {
-      console.log(newValue.staticimg.slice(0, 3));
-      var imgArray = newValue.staticimg.slice(0, 3);
-      this.imgArray = imgArray;
-    } } };exports.default = _default;
+var _default = { name: 'details', props: { detaildata: Object, leaveword: Array }, data: function data() {return { imgArray: [], //轮播图数据
+      navDatas: '', bannerindex: 0 //轮播图滚动对应图片数字
+    };}, methods: { // 滚动到第几张图片
+    bannerfun: function bannerfun(e) {this.bannerindex = e.detail.current;}, // 预览图片
+    previmg: function previmg(index) {var imglist = this.imgArray;(0, _list.preview)(index, imglist).then(function (res) {}).catch(function (err) {console.log(err);});} }, watch: { detaildata: function detaildata(newValue, oldValue) {// slice(start,end)：方法可从已有数组中返回选定的元素，返回一个新数组，包含从start到end（不包含该元素）的数组元素。(不会改变原数组)
+      var imgArray = newValue.staticimg.slice(0, 3);this.imgArray = imgArray;} } };exports.default = _default;
 
 /***/ }),
 
 /***/ 224:
-/*!***********************************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue?vue&type=style&index=0&id=4c79db8f&scoped=true&lang=css& ***!
-  \***********************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue?vue&type=style&index=0&id=4c79db8f&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -258,9 +217,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 225:
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/components/banner.vue?vue&type=style&index=0&id=4c79db8f&scoped=true&lang=css& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/components/banner.vue?vue&type=style&index=0&id=4c79db8f&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

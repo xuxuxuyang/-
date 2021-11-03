@@ -76,55 +76,30 @@
 		},
 		data() {
 			return {
-				// 禁掉发表按钮
-				btnlist:true,
-				num:0,
-				Comment:'',
+				btnlist:true,// 禁掉发表按钮
+				num:0, //控制分类的样式
+				Comment:'',//评价内容
 				newmessage:[],  //重组的的分类数组
 				box:false,  //隐藏评论框
-				avatarUrl:'',	//用户头像昵称
-				nickName:'',
-				ids:'',  //列表页的id，将上传到数据库
-				usermessage:[
-					{
-						'head':'http://h.thexxdd.cn/video/postimg.jpg',
-						'name':'星星点灯',
-						'message':'一路体验很好 虽说是拼车只有一天时间 可是遇到都是很好说话的伙伴 司机兼摄影师小磊小哥哥又帅又负责，拍照技术还杠杠的，顶着大理能烤人的太阳一个个给我们拍照！五星好评没话说！附上美照嘿嘿 ps:运气好碰上了好天气，怎么拍都是大片范儿！'
-					},
-					{
-						'head':'http://h.thexxdd.cn/video/postimg.jpg',
-						'name':'星星点灯',
-						'message':'一路体验很好 虽说是拼车只有一天时间 可是遇到都是很好说话的伙伴 司机兼摄影师小磊小哥哥又帅又负责，拍照技术还杠杠的，顶着大理能烤人的太阳一个个给我们拍照！五星好评没话说！附上美照嘿嘿 ps:运气好碰上了好天气，怎么拍都是大片范儿！'
-					},
-					{
-						'head':'http://h.thexxdd.cn/video/postimg.jpg',
-						'name':'星星点灯',
-						'message':'一路体验很好 虽说是拼车只有一天时间 可是遇到都是很好说话的伙伴 司机兼摄影师小磊小哥哥又帅又负责，拍照技术还杠杠的，顶着大理能烤人的太阳一个个给我们拍照！五星好评没话说！附上美照嘿嘿 ps:运气好碰上了好天气，怎么拍都是大片范儿！'
-					}
-				]
+				avatarUrl:'',//用户头像
+				nickName:'',//用户昵称
+				ids:'',  //列表页的id
 			}
 		},
 		methods:{
 			// 弹出评论框
 			popup(){
-				// 登录在评论
-				users.get()
+				users.get()// 弹出评论框前查看是否登录
 				.then((res)=>{
-				    console.log(res)
-					// length == 0说明没有用户信息，没有登录，提示登录
-				  if(res.data.length == 0){
+				  if(res.data.length == 0){// length == 0说明没有用户信息，没有登录，提示登录
 					  this.$nextTick(()=>{
 					  	this.$refs.mon.init()
 					  })
 				  }else{
-					  // 已经登录
-					console.log('已经登录')
-					  // 取到用户头像，昵称，oppenid暂存
 					let usermen = res.data[0]
 					this.avatarUrl = usermen.avatarUrl
 					this.nickName = usermen.nickName
-					// 弹出评论框
-					this.box = true
+					this.box = true// 弹出评论框
 				  }
 				})
 				.catch((err)=>{
@@ -132,14 +107,11 @@
 				})
 				
 			},
-			
-			// 隐藏评论框
+			// 取消评论隐藏评论框
 			messcancel(){
 				this.box = false
-				// 取消留言清空留言框
-				this.Comment = ''
+				this.Comment = ''//清空留言框
 			},
-			
 			// 发表评论
 			bTn(){
 				if(this.Comment == ''){
@@ -147,34 +119,23 @@
 					let icon = 'error'
 					this.tips(tip,icon)
 				}else{
-					console.log('可以提交')
 					this.btnlist = false
-					// 先提交到百度ai进行评论分类，成功后，在提交到数据库，
-					this.submit()
+					this.submit()// 先提交到百度ai进行评论分类，成功后，在提交到数据库
 				}
 			},
-			
 			async submit(){
 				// 先提交到百度ai
 				let stamess = await this.aiMessage()
-				console.log(stamess)
 				if(stamess.length === 0){
-					console.log('不提交')
-					// 返回空就提交空的上去
-					let classif = ''
-					// 提交到数据库
-					await this.messbase(classif)
+					let classif = ''// 返回空就提交空的上去
+					await this.messbase(classif)// 提交到数据库
 				}else{
-					console.log(stamess[stamess.length-1])
 					let ali = stamess[stamess.length-1]
 					let [prop,adj] = [ali.prop,ali.adj]
-					console.log(prop + adj)
 					let classif = prop + adj
-					// 提交到数据库
-					await this.messbase(classif)
+					await this.messbase(classif)// 提交到数据库
 				}
 			},
-			
 			// 调用云函数，评论分类
 			aiMessage(){
 				return new Promise((resolve,reject)=>{
@@ -185,7 +146,6 @@
 					      }
 					})
 					.then((res)=>{
-						console.log(res)
 						let aidata = res.result.aimessage.items
 						resolve(aidata)
 					})
@@ -195,8 +155,6 @@
 				})
 				
 			},
-			
-			
 			// 提交到数据库
 			messbase(classif){
 				return new Promise((resolve,reject)=>{
@@ -207,7 +165,6 @@
 						avatarUrl:this.avatarUrl,
 						nickName:this.nickName
 					}
-					
 					let mess = db.collection('message')
 					mess.add({
 						data:{
@@ -217,48 +174,36 @@
 						}
 					})
 					.then((res)=>{
-						console.log(res)
 						let tip = '留言成功'
 						let icon = 'success'
 						this.tips(tip,icon)
-						// 留言成功清空留言框
-						this.Comment = ''
+						this.Comment = ''// 留言成功清空留言框
 						this.btnlist = true
-						// 子组件调用父组件方法
 						let item = '全部'
-						this.$parent.fatherMethod(item);
+						this.$parent.fatherMethod(item);// 子组件调用父组件方法
 					})
 					.catch((err)=>{
 						console.log('提交出错')
 					})
 				})
 			},
-			
 			// 请求分类数据
 			menubtn(index,item){
-				console.log(item)
 				this.num = index
-				// 子组件调用父组件方法
-				this.$parent.fatherMethod(item);
+				this.$parent.fatherMethod(item);// 子组件调用父组件方法
 			},
-			
 			// 提示框
 			tips(tip,icon){
 				this.HMmessages.show(tip,{icon:icon,iconColor:"#ffffff", fontColor:"#ffffff", background:"rgba(102, 0, 51,.8)"})
 			}
 		},
-		
 		watch:{
 			messageword(newValue, oldValue){
-				console.log(newValue)
 				this.newmessage = ['全部',...newValue]
 				this.num = 0
-				console.log(this.newmessage)
 			},
-			// 列表页的id，将上传到数据库
 			detaid(newValue, oldValue){
-				console.log(newValue)
-				this.ids = newValue
+				this.ids = newValue // 列表页的id，将上传到数据库
 			}
 		}
 	}

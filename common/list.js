@@ -1,5 +1,5 @@
 // 引入定位js
-var QQMapWX = require('../common/qqmap-wx-jssdk.js');
+var QQMapWX = require('../common/qqmap-wx-jssdk.min.js');
 var qqmapsdk;
 
 

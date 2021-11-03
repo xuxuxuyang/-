@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/travels/travels"],{
 
 /***/ 50:
-/*!***********************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/main.js?{"page":"pages%2Ftravels%2Ftravels"} ***!
-  \***********************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/main.js?{"page":"pages%2Ftravels%2Ftravels"} ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_travels.default);
 /***/ }),
 
 /***/ 51:
-/*!****************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue ***!
-  \****************************************************************************/
+/*!******************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,9 +58,9 @@ component.options.__file = "pages/travels/travels.vue"
 /***/ }),
 
 /***/ 52:
-/*!***********************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue?vue&type=template&id=3ce83c3a&scoped=true& ***!
-  \***********************************************************************************************************************/
+/*!*************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue?vue&type=template&id=3ce83c3a&scoped=true& ***!
+  \*************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -80,9 +80,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 53:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue?vue&type=template&id=3ce83c3a&scoped=true& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue?vue&type=template&id=3ce83c3a&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -112,9 +112,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 54:
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -128,16 +128,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 55:
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 56));
-
-
 
 
 
@@ -228,7 +226,7 @@ var users = db.collection('user');var _default =
 
   data: function data() {
     return {
-      num: 0,
+      num: 0, //动态控制样式添加
       fication: [
       {
         "name": '景点' },
@@ -240,13 +238,12 @@ var users = db.collection('user');var _default =
         "name": '网红打卡' }],
 
 
-      // 上传的图片
-      topimg: [],
-      uploadvideos: false,
+      topimg: [], // 上传的图片数组
+      uploadvideos: false, //控制显示上传视频下面小列表
       videos: '', //上传的视频
-      address: '丰城市',
+      address: '丰城市', //给个默认定位
       // 以下是提交的暂存数据
-      classdata: '景点', //类型
+      classdata: '景点', //默认发表的分类
       titledata: '', //标题
       tipsdata: '', //心得
       modaishow: false, //模态框显示状态
@@ -254,8 +251,7 @@ var users = db.collection('user');var _default =
       avatarUrl: '',
       nickName: '',
       openid: '',
-      // 发布提示
-      reldata: '正在发布...请勿关闭该页面',
+      reldata: '正在发布...请勿关闭该页面', //发布提示组件文字
       relend: false,
       watchaddress: '' //监听用户选择的城市
     };
@@ -264,8 +260,8 @@ var users = db.collection('user');var _default =
   methods: {
     // 切换tab
     menubtn: function menubtn(index, name) {
-      this.num = index;
-      this.classdata = name;
+      this.num = index; //控制样式
+      this.classdata = name; //切换分类
     },
     // 上传图片
     uploadImg: function uploadImg() {var _this = this;
@@ -274,49 +270,40 @@ var users = db.collection('user');var _default =
         sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
         sourceType: ['album'], //从相册选择
         success: function success(res) {var _this$topimg;
-          console.log(res.tempFilePaths[0]);
           (_this$topimg = _this.topimg).push.apply(_this$topimg, _toConsumableArray(res.tempFilePaths));
         },
         fail: function fail(err) {
           console.log(err);
         } });
 
-
     },
     // 预览图片
     preImage: function preImage(index) {
       var imglist = this.topimg;
-      console.log(imglist);
-      console.log(index);
       (0, _list.preview)(index, imglist).
-      then(function (res) {
-        console.log(res);
-      }).
+      then(function (res) {}).
       catch(function (err) {
         console.log(err);
       });
-
     },
-
     // 删除图片
     deleteImg: function deleteImg(index) {
       this.topimg.splice(index, 1);
     },
-
     // 上传视频
     uploadVideo: function uploadVideo() {var _this2 = this;
       uni.showLoading({
-        title: '上传中' });
-
+        title: '上传中' //提示正在上传视频
+      });
       uni.chooseVideo({
-        count: 1,
-        sourceType: ['camera', 'album'],
-        maxDuration: 20 }).
-
+        count: 1, //设置上传数量
+        sourceType: ['camera', 'album'], //设置视频上传来源
+        maxDuration: 20 //设置拍摄视频最长拍摄时间，单位秒
+      }).
       then(function (res) {
         _this2.videos = res[1].tempFilePath;
-        _this2.uploadvideos = true;
-        uni.hideLoading();
+        _this2.uploadvideos = true; //显示视频小图列表
+        uni.hideLoading(); //关闭 showLoading提示
       }).
       catch(function (err) {
         uni.hideLoading();
@@ -324,24 +311,21 @@ var users = db.collection('user');var _default =
     },
     // 删除视频
     deleteVideo: function deleteVideo() {
-      this.videos = '';
-      this.uploadvideos = false;
+      this.videos = ''; //清空视频数据
+      this.uploadvideos = false; //隐藏上传的视频小列表
     },
-
-    // 定位
+    // 发起定位的方法
     addRess: function addRess() {var _this3 = this;
-      // 定位
       (0, _list.addressdata)().
       then(function (res) {
         var city = res.result.ad_info.city;
         _this3.address = city;
       }).
       catch(function (err) {
-        console.log('点了拒绝定位');
-        _this3.address = '丰城市';
+        _this3.address = '丰城市'; //给个默认定位
       });
     },
-    // 选择城市
+    // 点击选择城市进入选择城市页面
     chooseCity: function chooseCity() {
       uni.navigateTo({
         url: '../city/city' });
@@ -355,76 +339,56 @@ var users = db.collection('user');var _default =
       } else if (this.tipsdata == '') {
         var _tip = '请填写描述';
         this.proMpt(_tip);
-      } else if (this.topimg.length < 3) {
-        var _tip2 = '上传的图片不少于三张';
+      } else if (this.topimg.length < 1) {
+        var _tip2 = '上传的图片不少于1张';
         this.proMpt(_tip2);
       } else {
-        console.log('可以提交');
-        // 判断是否登录
-        this.userinfo();
+        this.userinfo(); // 提交前判断是否登录
       }
     },
-    // 判断是否登录再提交
+    // 判断是否登录
     userinfo: function userinfo() {var _this4 = this;
-      // 请求用户信息数据库看看有没有存在用户信息
       users.get().
       then(function (res) {
-        // length == 0说明没有用户信息，没有登录，提示登录
-        if (res.data.length == 0) {
+        if (res.data.length == 0) {// length == 0说明没有用户信息，没有登录，提示登录
           _this4.$nextTick(function () {
             _this4.$refs.mon.init();
           });
         } else {
-          // 已经登录
-          // 取到用户头像，昵称，oppenid暂存
           var usermen = res.data[0];
           _this4.avatarUrl = usermen.avatarUrl;
           _this4.nickName = usermen.nickName;
           _this4.openid = usermen._openid;
-          // console.log(this.avatarUrl,this.nickName,this.openid)
-          // 上传用户提交的数据到云存储和数据库
-          // 提示正在发布的及时反馈
-          _this4.relend = true;
-          _this4.userdata();
+          _this4.relend = true; //发布成功的标识
+          _this4.userdata(); // 上传用户提交的数据到云存储和数据库
         }
       }).
       catch(function (err) {
         console.log(err);
       });
     },
-
     // 上传用户提交的数据到云存储和数据库
     userdata: function userdata() {var _this5 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var staticimg, staticvideo;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
 
-
                   _this5.staticImg());case 2:staticimg = _context.sent;_context.next = 5;return (
-
-
                   _this5.staticVideo());case 5:staticvideo = _context.sent;_context.next = 8;return (
-
                   _this5.cloudData(staticimg, staticvideo));case 8:case "end":return _context.stop();}}}, _callee);}))();
     },
-
     // 上传图片视频文件到云储存
     staticImg: function staticImg() {var _this6 = this;
-      // 把返回的fileid合并成数组
-      var imgfileID = [];
+      var imgfileID = []; // 把返回的fileid合并成数组
       return new Promise(function (resolve, reject) {
         _this6.topimg.forEach(function (img) {
           var imgion = img.lastIndexOf('.');
-          // console.log(imgion)
           var eximg = img.slice(imgion);
-          // console.log(eximg)
           var cloudPath = "".concat(Date.now(), "-").concat(Math.floor(Math.random(0, 1) * 10000000)).concat(eximg);
           wx.cloud.uploadFile({
             cloudPath: "static/" + cloudPath, // 上传至云端的路径
             filePath: img // 要上传的文件
           }).
           then(function (res) {
-            // 形成数组
-            imgfileID.push(res.fileID);
-            // 判断云储存的图片长度是否和用户上传的图片一样多
-            if (imgfileID.length == _this6.topimg.length) {
+            imgfileID.push(res.fileID); // 形成数组
+            if (imgfileID.length == _this6.topimg.length) {// 判断云储存的图片长度是否和用户上传的图片一样多
               resolve(imgfileID);
             }
           }).
@@ -435,13 +399,11 @@ var users = db.collection('user');var _default =
 
       });
     },
-
     // 上传视频到云储存
     staticVideo: function staticVideo() {var _this7 = this;
       return new Promise(function (resolve, reject) {
-        // 用户是否要上传视频
         if (_this7.videos == '') {
-          resolve('');
+          resolve(''); // 用户是否要上传视频
         } else {
           var videoion = _this7.videos.lastIndexOf('.');
           var exvideo = _this7.videos.slice(videoion);
@@ -459,12 +421,10 @@ var users = db.collection('user');var _default =
         }
       });
     },
-
-
     // 上传所有数据到数据库
     cloudData: function cloudData(staticimg, staticvideo) {var _this8 = this;
       var datas = {
-        time: time,
+        time: time, //当前时间
         classdata: this.classdata, //分类
         titledata: this.titledata, //标题
         tipsdata: this.tipsdata, //描述
@@ -476,40 +436,35 @@ var users = db.collection('user');var _default =
         staticvideo: staticvideo //视频
       };
       db.collection('userdata').add({
-        // data 字段表示需新增的 JSON 数据
-        data: {
+        data: { // data 字段表示需新增的 JSON 数据
           datainfo: datas } }).
 
 
       then(function (res) {
-        // 全部提交成功，清除更新提示
-        _this8.reldata = '发布成功，正在跳转...';
-        // 传值给攻略页面，发表成功刷新页面
+        _this8.reldata = '发布成功，正在跳转...'; // 全部提交成功，清除更新提示
         var pagesid = true;
         setTimeout(function () {
           uni.switchTab({
             url: '../strategy/strategy' });
 
-          _this8.$store.commit('roturnmuta', pagesid);
-        }, 1700);
+          _this8.$store.commit('roturnmuta', pagesid); // 发表成功标识存入VueX 让其他实时获取标识更新页面数据
+        }, 1000);
       }).
       catch(function (err) {
         console.log(err);
       });
     },
-
     // 取消
     cancel: function cancel() {
       this.modaishow = false;
     },
-
     // 提示
     proMpt: function proMpt(tip) {
       this.HMmessages.show(tip, { icon: 'error', iconColor: "#ffffff", fontColor: "#ffffff", background: "rgba(102, 0, 51,.8)" });
     } },
 
   created: function created() {
-    this.addRess();
+    this.addRess(); //进入页面发起定位请求
   },
   computed: _objectSpread(_objectSpread({},
   (0, _vuex.mapState)(['travecity'])), {}, {
@@ -526,9 +481,9 @@ var users = db.collection('user');var _default =
 /***/ }),
 
 /***/ 60:
-/*!*************************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue?vue&type=style&index=0&id=3ce83c3a&scoped=true&lang=css& ***!
-  \*************************************************************************************************************************************/
+/*!***************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue?vue&type=style&index=0&id=3ce83c3a&scoped=true&lang=css& ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -542,9 +497,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 61:
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/travels/travels.vue?vue&type=style&index=0&id=3ce83c3a&scoped=true&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/travels/travels.vue?vue&type=style&index=0&id=3ce83c3a&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

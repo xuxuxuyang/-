@@ -36,13 +36,11 @@
 			},
 			messcancel(){
 				this.modaishow = false
-				console.log('取消')
 				return '取消'
 			},
 			// 发起登录
 			getUserInfo(){
 				this.modaishow = false
-				//新的登录接口：wx.getUserProfile
 				wx.getUserProfile({
 					desc: '登录'
 				})
@@ -53,12 +51,10 @@
 					console.log('拒绝登录或登录失败')
 				})
 			  },
-			  
 			  // 调用登录
 			  wxLogin(user){
 				  login(user)
 				  .then((res)=>{
-				  	console.log(res)
 				  	this.HMmessages.show('登陆成功',{icon:'success',iconColor:"#ffffff", fontColor:"#ffffff", background:"rgba(102, 0, 51,.8)"})
 				  })
 				  .catch((err)=>{

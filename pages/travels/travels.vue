@@ -44,16 +44,14 @@
 				<image class="pause" src="../../static/tab/delvideo.png" @click="deleteVideo()"></image>
 			</view>
 		</view>
-	
 		<!-- 定位 -->
 		<view class="address">
-			<view class="address-text">你在哪里</view>
+			<view class="address-text">当前定位</view>
 			<view class="address-site">
 				<image src="../../static/tab/addimg.svg" mode="widthFix"></image>
 				<text @click="chooseCity()">{{address}}</text>
 			</view>
 		</view>
-		
 		<!-- 发布 -->
 		<view class="release" @click="suBmitd()">
 			发布
@@ -91,7 +89,7 @@
 		},
 		data() {
 			return {
-				num:0,
+				num:0,//动态控制样式添加
 				fication: [
 					{
 						"name":'景点'
@@ -103,13 +101,12 @@
 						"name":'网红打卡'
 					}
 				],
-				// 上传的图片
-				topimg:[],
-				uploadvideos:false,
+				topimg:[],// 上传的图片数组
+				uploadvideos:false,//控制显示上传视频下面小列表
 				videos:'',  //上传的视频
-				address:'丰城市',
+				address:'丰城市', //给个默认定位
 				// 以下是提交的暂存数据
-				classdata:'景点',  //类型
+				classdata:'景点',  //默认发表的分类
 				titledata:'',  //标题
 				tipsdata:'', //心得
 				modaishow:false,   //模态框显示状态
@@ -117,8 +114,7 @@
 				avatarUrl:'',
 				nickName:'',
 				openid:'',
-				// 发布提示
-				reldata:'正在发布...请勿关闭该页面',
+				reldata:'正在发布...请勿关闭该页面', //发布提示组件文字
 				relend:false,
 				watchaddress:''   //监听用户选择的城市
 			}
@@ -127,8 +123,8 @@
 		methods:{
 			// 切换tab
 			menubtn(index,name){
-				this.num = index
-				this.classdata = name 
+				this.num = index //控制样式
+				this.classdata = name //切换分类
 			},
 			// 上传图片
 			uploadImg(){
@@ -137,49 +133,40 @@
 					sizeType: ['original', 'compressed'], //可以指定是原图还是压缩图，默认二者都有
 					sourceType: ['album'], //从相册选择
 					success: (res) => {
-						console.log(res.tempFilePaths[0])
 						this.topimg.push(...res.tempFilePaths)
 					},
 					fail: (err) => {
 						console.log(err)
 					}
 				})
-				
 			},
 			// 预览图片
 			preImage(index){
 				let imglist = this.topimg
-				console.log(imglist)
-				console.log(index)
 				preview(index,imglist)
-				.then((res)=>{
-					console.log(res)
-				})
+				.then((res)=>{})
 				.catch((err)=>{
 					console.log(err)
 				})
-				
 			},
-			
 			// 删除图片
 			deleteImg(index){
 				this.topimg.splice(index, 1)
 			},
-			
 			// 上传视频
 			uploadVideo(){
 				uni.showLoading({
-						title: '上传中'
+						title: '上传中'  //提示正在上传视频
 				});
 				uni.chooseVideo({
-					count: 1,
-					sourceType: ['camera', 'album'],
-					maxDuration:20
+					count: 1,  //设置上传数量
+					sourceType: ['camera', 'album'],//设置视频上传来源
+					maxDuration:20 //设置拍摄视频最长拍摄时间，单位秒
 				})
 				.then((res)=>{
-					this.videos = res[1].tempFilePath
-					this.uploadvideos = true
-					uni.hideLoading();
+					this.videos = res[1].tempFilePath 
+					this.uploadvideos = true //显示视频小图列表
+					uni.hideLoading(); //关闭 showLoading提示
 				})
 				.catch((err)=>{
 					uni.hideLoading();
@@ -187,24 +174,21 @@
 			},
 			// 删除视频
 			deleteVideo(){
-				this.videos = ''
-				this.uploadvideos = false
+				this.videos = '' //清空视频数据
+				this.uploadvideos = false //隐藏上传的视频小列表
 			},
-			
-			// 定位
+			// 发起定位的方法
 			addRess(){
-				// 定位
 				addressdata()
 				.then((res)=>{
 					let city = res.result.ad_info.city
 					this.address = city
 				})
 				.catch((err)=>{
-					console.log('点了拒绝定位');
-					this.address = '丰城市'
+					this.address = '丰城市' //给个默认定位
 				})
 			},
-			// 选择城市
+			// 点击选择城市进入选择城市页面
 			chooseCity(){
 				uni.navigateTo({
 					url:'../city/city'
@@ -218,76 +202,56 @@
 				}else if(this.tipsdata == ''){
 					let tip = '请填写描述'
 					this.proMpt(tip)
-				}else if(this.topimg.length < 3){
-					let tip = '上传的图片不少于三张'
+				}else if(this.topimg.length < 1){
+					let tip = '上传的图片不少于1张'
 					this.proMpt(tip)
 				}else{
-					console.log('可以提交')
-					// 判断是否登录
-					this.userinfo()
+					this.userinfo()// 提交前判断是否登录
 				}
 			},
-			// 判断是否登录再提交
+			// 判断是否登录
 			userinfo(){
-				// 请求用户信息数据库看看有没有存在用户信息
 				users.get()
 				.then((res)=>{
-					// length == 0说明没有用户信息，没有登录，提示登录
-				  if(res.data.length == 0){
+				  if(res.data.length == 0){// length == 0说明没有用户信息，没有登录，提示登录
 					 this.$nextTick(()=>{
 					 	this.$refs.mon.init()
 					 })
 				  }else{
-					  // 已经登录
-					  // 取到用户头像，昵称，oppenid暂存
 					let usermen = res.data[0]
 					this.avatarUrl = usermen.avatarUrl
 					this.nickName = usermen.nickName
 					this.openid = usermen._openid
-					// console.log(this.avatarUrl,this.nickName,this.openid)
-					// 上传用户提交的数据到云存储和数据库
-					// 提示正在发布的及时反馈
-					this.relend = true
-					this.userdata()
+					this.relend = true //发布成功的标识
+					this.userdata() // 上传用户提交的数据到云存储和数据库
 				  }
 				})
 				.catch((err)=>{
 					console.log(err)
 				})
 			},
-			
 			// 上传用户提交的数据到云存储和数据库
 			async userdata(){
 				// 上传之前需要先把图片视频静态文件上传到云存储返回链接再把链接同其他字符串一并上传到数据库，分两步
-				// 先等待图片上传到云储存
-				let staticimg = await this.staticImg()
-				// console.log(staticimg)
-				// 等待视频上传到云存储成功
-				let staticvideo = await this.staticVideo()
-				// 最后上传所有数据到云数据库
-				await this.cloudData(staticimg,staticvideo)
+				let staticimg = await this.staticImg()// 先等待图片上传到云储存
+				let staticvideo = await this.staticVideo()// 等待视频上传到云存储成功
+				await this.cloudData(staticimg,staticvideo)// 最后上传所有数据到云数据库
 			},
-			
 			// 上传图片视频文件到云储存
 			staticImg(){
-				// 把返回的fileid合并成数组
-				var imgfileID = []
+				var imgfileID = []// 把返回的fileid合并成数组
 				return new Promise((resolve,reject)=>{
 					this.topimg.forEach((img)=>{
 						const imgion = img.lastIndexOf('.');
-						// console.log(imgion)
 						const eximg = img.slice(imgion);
-						// console.log(eximg)
 						const cloudPath = `${Date.now()}-${Math.floor(Math.random(0, 1) * 10000000)}${eximg}`;
 						wx.cloud.uploadFile({
 						    cloudPath: "static/" + cloudPath, // 上传至云端的路径
 						    filePath: img // 要上传的文件
 						})
 						.then((res)=>{
-							// 形成数组
-							imgfileID.push(res.fileID)
-							// 判断云储存的图片长度是否和用户上传的图片一样多
-							if(imgfileID.length == this.topimg.length){
+							imgfileID.push(res.fileID)// 形成数组
+							if(imgfileID.length == this.topimg.length){// 判断云储存的图片长度是否和用户上传的图片一样多
 								resolve(imgfileID)
 							}
 						})
@@ -298,13 +262,11 @@
 					
 				})
 			},
-			
 			// 上传视频到云储存
 			staticVideo(){
 				return new Promise((resolve,reject)=>{
-					// 用户是否要上传视频
 					if(this.videos == ''){
-						resolve('')
+						resolve('') // 用户是否要上传视频
 					}else{
 						const videoion = this.videos.lastIndexOf('.');
 						const exvideo = this.videos.slice(videoion);
@@ -322,12 +284,10 @@
 					}
 				})
 			},
-			
-			
 			// 上传所有数据到数据库
 			cloudData(staticimg,staticvideo){
 				let datas = {
-					time:time,
+					time:time, //当前时间
 					classdata:this.classdata, //分类
 					titledata:this.titledata,  //标题
 					tipsdata:this.tipsdata, //描述
@@ -339,40 +299,35 @@
 					staticvideo:staticvideo  //视频
 				}
 				db.collection('userdata').add({
-				  // data 字段表示需新增的 JSON 数据
-				  data: {
+				  data: {	// data 字段表示需新增的 JSON 数据
 				    datainfo:datas
 				  }
 				})
 				.then((res)=>{
-					// 全部提交成功，清除更新提示
-					this.reldata = '发布成功，正在跳转...'
-					// 传值给攻略页面，发表成功刷新页面
+					this.reldata = '发布成功，正在跳转...' // 全部提交成功，清除更新提示
 					var pagesid = true
 					setTimeout(()=>{
 						uni.switchTab({
 							url:'../strategy/strategy'
 						})
-					this.$store.commit('roturnmuta', pagesid)
-					},1700)
+					this.$store.commit('roturnmuta', pagesid) // 发表成功标识存入VueX 让其他实时获取标识更新页面数据
+					},1000)
 				})
 				.catch((err)=>{
 					console.log(err)
 				})
 			},
-			
 			// 取消
 			cancel(){
 				this.modaishow = false
 			},
-			
 			// 提示
 			proMpt(tip){
 				this.HMmessages.show(tip,{icon:'error',iconColor:"#ffffff", fontColor:"#ffffff", background:"rgba(102, 0, 51,.8)"})
 			}
 		},
 		created() {
-			this.addRess()
+			this.addRess() //进入页面发起定位请求
 		},
 		computed:{
 			...mapState(['travecity']),

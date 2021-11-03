@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/details/details"],{
 
 /***/ 42:
-/*!***********************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/main.js?{"page":"pages%2Fdetails%2Fdetails"} ***!
-  \***********************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/main.js?{"page":"pages%2Fdetails%2Fdetails"} ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_details.default);
 /***/ }),
 
 /***/ 43:
-/*!****************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue ***!
-  \****************************************************************************/
+/*!******************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,9 +58,9 @@ component.options.__file = "pages/details/details.vue"
 /***/ }),
 
 /***/ 44:
-/*!***********************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue?vue&type=template&id=39cbb4e8& ***!
-  \***********************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue?vue&type=template&id=39cbb4e8& ***!
+  \*************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -80,9 +80,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 45:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue?vue&type=template&id=39cbb4e8& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue?vue&type=template&id=39cbb4e8& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -107,9 +107,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 46:
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -123,9 +123,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 47:
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -165,12 +165,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _vuex = __webpack_require__(/*! vuex */ 14);function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var Navs = function Navs() {__webpack_require__.e(/*! require.ensure | pages/details/components/navs */ "pages/details/components/navs").then((function () {return resolve(__webpack_require__(/*! ./components/navs.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Banner = function Banner() {Promise.all(/*! require.ensure | pages/details/components/banner */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/details/components/banner")]).then((function () {return resolve(__webpack_require__(/*! ./components/banner.vue */ 219));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Matter = function Matter() {__webpack_require__.e(/*! require.ensure | pages/details/components/matter */ "pages/details/components/matter").then((function () {return resolve(__webpack_require__(/*! ./components/matter.vue */ 226));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Message = function Message() {Promise.all(/*! require.ensure | pages/details/components/message */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/details/components/message")]).then((function () {return resolve(__webpack_require__(/*! ./components/message.vue */ 233));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
-// 引入数据库
-var db = wx.cloud.database();
+
+var db = wx.cloud.database(); // 引入数据库
 var listdata = db.collection('userdata');
-// 留言数据库
-var messdatabase = db.collection('message');var _default =
-{
+var messdatabase = db.collection('message'); // 留言数据库
+var _default = {
   components: {
     Navs: Navs,
     Banner: Banner,
@@ -183,41 +182,39 @@ var messdatabase = db.collection('message');var _default =
       styleObject: 0,
       detaildata: {},
       leaveword: [],
-      // 分类留言
-      messageword: [],
+      messageword: [], // 分类留言
       nonedata: false,
       detaid: '', //列表页传过来的id
       homeload: true };
 
   },
   methods: {
+    // 动态改变nav样式属性方法
     handleScroll: function handleScroll(top) {
       if (top > 90) {
         var opacity = top / 170;
         opacity = opacity > 1 ? 1 : opacity;
-        // console.log(opacity)
         this.styleObject = opacity;
         this.showAbs = false;
       } else {
         this.showAbs = true;
       }
     },
-    // 请求数据库数据{图文列表，轮播图}
+    // 精准请求数据库数据
     detailreq: function detailreq(id) {var _this = this;
       listdata.where({
         _id: id }).
 
       get().
       then(function (res) {
-        // 赋值筛选到的数据
-        _this.detaildata = res.data[0].datainfo;
+        _this.detaildata = res.data[0].datainfo; // 赋值筛选到的数据
         _this.homeload = false;
       }).
       catch(function (err) {
         console.log(err);
       });
     },
-    // 留言数据
+    // 精准请求留言数据
     messagedata: function messagedata(id) {var _this2 = this;
       messdatabase.where({
         id: id }).
@@ -226,16 +223,14 @@ var messdatabase = db.collection('message');var _default =
       get().
       then(function (res) {
         var resdata = res.data;
-        // 取出ai分类数据
-        _this2.classData(resdata);
-        // 取出留言列表
-        _this2.publicMess(resdata);
+        _this2.classData(resdata); // 取出ai分类数据
+        _this2.publicMess(resdata); // 取出留言列表
       }).
       catch(function (err) {
         console.log(err);
       });
     },
-    // 子组件ai tab分类查询留言的数据
+    // 子组件ai 点击tab分类查询分类留言的数据
     querymessage: function querymessage(ceshi, item) {var _this3 = this;
       messdatabase.where({
         id: ceshi,
@@ -257,9 +252,8 @@ var messdatabase = db.collection('message');var _default =
         return item.messagedata;
       });
       this.leaveword = leaveword;
-      // 如果留言列表为空，给予提示
       if (leaveword.length === 0) {
-        this.nonedata = true;
+        this.nonedata = true; // 如果留言列表为空，给予提示
       } else {
         this.nonedata = false;
       }
@@ -269,13 +263,11 @@ var messdatabase = db.collection('message');var _default =
       var messageword = resdata.map(function (item) {
         return item.classmessage;
       });
-      // 数组去重
-      var newarr = Array.from(new Set(messageword));
-      // 数组去空值
-      var newArr = newarr.filter(function (item) {return item;});
+      var newarr = Array.from(new Set(messageword)); // 数组去重
+      var newArr = newarr.filter(function (item) {return item;}); // 数组去空值
       this.messageword = newArr;
     },
-    // 描点链接
+    // 描点链接精准滚动方法
     pageScroll: function pageScroll(deta) {
       var query = this.createSelectorQuery();
       query.select(deta).boundingClientRect();
@@ -292,15 +284,13 @@ var messdatabase = db.collection('message');var _default =
     // 被子组件调用，请求分类留言数据
     fatherMethod: function fatherMethod(item) {
       if (item == "全部") {
-        // 请求留言
-        this.messagedata(this.detaid);
+        this.messagedata(this.detaid); // 请求留言
       } else {
-        // ai分类tab数据
-        this.querymessage(this.detaid, item);
+        this.querymessage(this.detaid, item); // ai分类tab数据
       }
     } },
 
-  // 2.监听页面滚动距离scrollTop
+  // 监听页面滚动距离scrollTop
   onPageScroll: function onPageScroll(e) {
     var top = e.scrollTop;
     this.handleScroll(top);
@@ -308,15 +298,12 @@ var messdatabase = db.collection('message');var _default =
   // 接收列表页的参数
   onLoad: function onLoad(e) {
     this.detaid = e.id;
-    // 请求数据库数据{图文列表，轮播图}
-    this.detailreq(this.detaid);
-    // 请求留言
-    this.messagedata(this.detaid);
+    this.detailreq(this.detaid); // 精准请求数据库数据
+    this.messagedata(this.detaid); // 精准请求留言
   },
-  // 描点链接
   computed: _objectSpread(_objectSpread({},
   (0, _vuex.mapState)(['navindex'])), {}, {
-    bannervuex: function bannervuex() {
+    bannervuex: function bannervuex() {// 实时监听VueX保存的点击状态->描点链接精准滚动
       if (this.navindex.index === 1) {
         var details = '.matter-page';
         this.pageScroll(details);
@@ -330,9 +317,9 @@ var messdatabase = db.collection('message');var _default =
 /***/ }),
 
 /***/ 48:
-/*!*************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue?vue&type=style&index=0&lang=css& ***!
-  \*************************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -346,9 +333,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 49:
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/飞猪旅游/flying/pages/details/details.vue?vue&type=style&index=0&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/details/details.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

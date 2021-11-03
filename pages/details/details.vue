@@ -33,11 +33,10 @@
 	import Matter from './components/matter.vue'
 	import Message from './components/message.vue'
 	import {mapState} from 'vuex'
-	// 引入数据库
-	var db = wx.cloud.database()
+
+	var db = wx.cloud.database() // 引入数据库
 	var listdata = db.collection('userdata')
-	// 留言数据库
-	var messdatabase = db.collection('message')
+	var messdatabase = db.collection('message')// 留言数据库
 	export default{
 		components:{
 			Navs,
@@ -51,41 +50,39 @@
 				styleObject:0,
 				detaildata:{},
 				leaveword:[],
-				// 分类留言
-				messageword:[],
+				messageword:[],// 分类留言
 				nonedata:false,
 				detaid:'',  //列表页传过来的id
 				homeload:true
 			}
 		},
 		methods:{
+			// 动态改变nav样式属性方法
 			handleScroll(top){
 				if(top > 90){
 					let opacity = top / 170
 					opacity = opacity > 1 ? 1 : opacity
-					// console.log(opacity)
 					this.styleObject = opacity
 					this.showAbs = false
 				} else{
 					this.showAbs = true
 				}
 			},
-			// 请求数据库数据{图文列表，轮播图}
+			// 精准请求数据库数据
 			detailreq(id){
 				listdata.where({
 				  _id:id
 				})
 				.get()
 				.then((res)=>{
-					// 赋值筛选到的数据
-					this.detaildata = res.data[0].datainfo
+					this.detaildata = res.data[0].datainfo// 赋值筛选到的数据
 					this.homeload = false	
 				})
 				.catch((err)=>{
 					console.log(err)
 				})
 			},
-			// 留言数据
+			// 精准请求留言数据
 			messagedata(id){
 				messdatabase.where({
 				  id:id
@@ -94,16 +91,14 @@
 				.get()
 				.then((res)=>{
 					let resdata = res.data
-					// 取出ai分类数据
-					this.classData(resdata)
-					// 取出留言列表
-					this.publicMess(resdata)
+					this.classData(resdata)// 取出ai分类数据
+					this.publicMess(resdata)// 取出留言列表
 				})
 				.catch((err)=>{
 					console.log(err)
 				})
 			},
-			// 子组件ai tab分类查询留言的数据
+			// 子组件ai 点击tab分类查询分类留言的数据
 			querymessage(ceshi,item){
 				messdatabase.where({
 				  id:ceshi,
@@ -125,9 +120,8 @@
 					return item.messagedata
 				})
 				this.leaveword = leaveword
-				// 如果留言列表为空，给予提示
 				if(leaveword.length === 0){
-					this.nonedata = true
+					this.nonedata = true // 如果留言列表为空，给予提示
 				}else{
 					this.nonedata = false
 				}
@@ -137,13 +131,11 @@
 				var messageword = resdata.map((item)=>{
 					return item.classmessage
 				})
-				// 数组去重
-				let newarr = Array.from(new Set(messageword))
-				// 数组去空值
-				var newArr = newarr.filter(item => item)
+				let newarr = Array.from(new Set(messageword))// 数组去重
+				var newArr = newarr.filter(item => item)// 数组去空值
 				this.messageword = newArr
 			},
-			// 描点链接
+			// 描点链接精准滚动方法
 			pageScroll(deta){
 				const query = this.createSelectorQuery();
 				query.select(deta).boundingClientRect()
@@ -160,15 +152,13 @@
 			// 被子组件调用，请求分类留言数据
 			fatherMethod(item){
 				if(item == "全部"){
-					// 请求留言
-					this.messagedata(this.detaid)
+					this.messagedata(this.detaid)// 请求留言
 				}else{
-					// ai分类tab数据
-					this.querymessage(this.detaid,item)
+					this.querymessage(this.detaid,item)// ai分类tab数据
 				}
 			}
 		},
-		// 2.监听页面滚动距离scrollTop
+		// 监听页面滚动距离scrollTop
 		onPageScroll (e){
 			let top = e.scrollTop
 			this.handleScroll(top)
@@ -176,15 +166,12 @@
 		// 接收列表页的参数
 		onLoad(e) {
 			this.detaid = e.id
-			// 请求数据库数据{图文列表，轮播图}
-			this.detailreq(this.detaid)
-			// 请求留言
-			this.messagedata(this.detaid)
+			this.detailreq(this.detaid)// 精准请求数据库数据
+			this.messagedata(this.detaid)// 精准请求留言
 		},
-		// 描点链接
 		computed:{
 			...mapState(['navindex']),
-			bannervuex(){
+			bannervuex(){ // 实时监听VueX保存的点击状态->描点链接精准滚动
 				if(this.navindex.index === 1){
 					let details = '.matter-page'
 					this.pageScroll(details)

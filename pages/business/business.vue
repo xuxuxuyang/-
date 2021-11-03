@@ -66,6 +66,7 @@
 			}
 		},
 		methods:{
+			// 改变样式方法
 			handleScroll(top){
 				if(top > 90){
 					let opacity = top / 170

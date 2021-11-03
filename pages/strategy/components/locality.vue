@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="locality">
-			<view class="title">当地必体验</view>
+			<view class="title">当地出行攻略</view>
 		</view>	
 		<!-- tab -->
 		<view class="menu-block">
@@ -9,7 +9,6 @@
 				<view :class="{ activetext: index == num }" @click="menubtn(index,item.name)">{{item.name}}</view>
 			</block>
 		</view>
-		
 	</view>
 </template>
 
@@ -41,11 +40,9 @@
 		methods:{
 			menubtn(index,name){
 				this.num = index
-				// 调用父组件请求分类数据的方法
-				this.$parent.fatherMethod(name);
+				this.$parent.fatherMethod(name);	// 调用父组件请求分类数据的方法
 			},
 		}
-		
 	}
 </script>
 
