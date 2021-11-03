@@ -67,7 +67,7 @@
 			},
 		},
 		watch:{
-			detaildata(newValue, oldValue){
+			detaildata(newValue, oldValue){ //监听父组件传递过来的数据的变化
 				// slice(start,end)：方法可从已有数组中返回选定的元素，返回一个新数组，包含从start到end（不包含该元素）的数组元素。(不会改变原数组)
 				let imgArray = newValue.staticimg.slice(0,3) 
 				this.imgArray = imgArray

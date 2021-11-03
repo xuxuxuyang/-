@@ -1,57 +1,56 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/strategy/strategy",
-        "pages/my/my",
-        "pages/details/details",
-        "pages/travels/travels",
-        "pages/city/city",
-        "pages/search/search",
-        "pages/business/business",
-        "pages/cart/cart",
-        "pages/MyCart/mycart",
-        "pages/order/order",
-        "pages/Myorder/myorder"
-    ],
-    "subPackages": [],
-    "window": {
-        "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "uni-app",
-        "navigationBarBackgroundColor": "#ffd300",
-        "backgroundColor": "#ffd300"
-    },
-    "tabBar": {
-        "color": "#333333",
-        "selectedColor": "#F76E15",
-        "borderStyle": "black",
-        "backgroundColor": "#FFFFFF",
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "iconPath": "static/tab/list.png",
-                "selectedIconPath": "static/tab/listb.png",
-                "text": "首页"
-            },
-            {
-                "pagePath": "pages/strategy/strategy",
-                "iconPath": "static/tab/gonglvea.png",
-                "selectedIconPath": "static/tab/gonglveb.png",
-                "text": "攻略"
-            },
-            {
-                "pagePath": "pages/my/my",
-                "iconPath": "static/tab/wodea.png",
-                "selectedIconPath": "static/tab/wodeb.png",
-                "text": "我的"
-            }
-        ]
-    },
-    "permission": {},
-    "usingComponents": {
-        "loader-list": "/element/loading",
-        "home-load": "/element/homeload",
-        "none-data": "/element/none",
-        "samll-load": "/element/smallload"
-    },
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/strategy/strategy",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/travels/travels",
+    "pages/city/city",
+    "pages/search/search",
+    "pages/business/business",
+    "pages/cart/cart",
+    "pages/MyCart/mycart",
+    "pages/order/order",
+    "pages/Myorder/myorder"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#ffd300",
+    "backgroundColor": "#ffd300"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#F76E15",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab/list.png",
+        "selectedIconPath": "static/tab/listb.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/strategy/strategy",
+        "iconPath": "static/tab/gonglvea.png",
+        "selectedIconPath": "static/tab/gonglveb.png",
+        "text": "攻略"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tab/wodea.png",
+        "selectedIconPath": "static/tab/wodeb.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {
+    "loader-list": "/element/loading",
+    "home-load": "/element/homeload",
+    "none-data": "/element/none",
+    "samll-load": "/element/smallload"
+  }
 }

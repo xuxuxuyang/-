@@ -164,10 +164,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _vuex = __webpack_require__(/*! vuex */ 14);function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var Navs = function Navs() {__webpack_require__.e(/*! require.ensure | pages/details/components/navs */ "pages/details/components/navs").then((function () {return resolve(__webpack_require__(/*! ./components/navs.vue */ 212));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Banner = function Banner() {Promise.all(/*! require.ensure | pages/details/components/banner */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/details/components/banner")]).then((function () {return resolve(__webpack_require__(/*! ./components/banner.vue */ 219));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Matter = function Matter() {__webpack_require__.e(/*! require.ensure | pages/details/components/matter */ "pages/details/components/matter").then((function () {return resolve(__webpack_require__(/*! ./components/matter.vue */ 226));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Message = function Message() {Promise.all(/*! require.ensure | pages/details/components/message */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/details/components/message")]).then((function () {return resolve(__webpack_require__(/*! ./components/message.vue */ 233));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+var _vuex = __webpack_require__(/*! vuex */ 14);function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var Navs = function Navs() {__webpack_require__.e(/*! require.ensure | pages/details/components/navs */ "pages/details/components/navs").then((function () {return resolve(__webpack_require__(/*! ./components/navs.vue */ 211));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Banner = function Banner() {Promise.all(/*! require.ensure | pages/details/components/banner */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/details/components/banner")]).then((function () {return resolve(__webpack_require__(/*! ./components/banner.vue */ 218));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Matter = function Matter() {__webpack_require__.e(/*! require.ensure | pages/details/components/matter */ "pages/details/components/matter").then((function () {return resolve(__webpack_require__(/*! ./components/matter.vue */ 225));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Message = function Message() {Promise.all(/*! require.ensure | pages/details/components/message */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/details/components/message")]).then((function () {return resolve(__webpack_require__(/*! ./components/message.vue */ 232));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 var db = wx.cloud.database(); // 引入数据库
-var listdata = db.collection('userdata');
+var listdata = db.collection('userdata'); //用户发表数据库
 var messdatabase = db.collection('message'); // 留言数据库
 var _default = {
   components: {
@@ -178,18 +178,18 @@ var _default = {
 
   data: function data() {
     return {
-      showAbs: true,
-      styleObject: 0,
-      detaildata: {},
-      leaveword: [],
-      messageword: [], // 分类留言
-      nonedata: false,
+      showAbs: true, //控制nav是否显示
+      styleObject: 0, //动态控制nav样式
+      detaildata: {}, //用户分享数据
+      leaveword: [], //具体留言数据数组
+      messageword: [], // ai留言分类数组
+      nonedata: false, //控制没有留言的提示是否显示
       detaid: '', //列表页传过来的id
-      homeload: true };
-
+      homeload: true //控制进入页面执行的loading
+    };
   },
   methods: {
-    // 动态改变nav样式属性方法
+    // 动态改变nav样式opacity属性方法
     handleScroll: function handleScroll(top) {
       if (top > 90) {
         var opacity = top / 170;
@@ -223,8 +223,8 @@ var _default = {
       get().
       then(function (res) {
         var resdata = res.data;
-        _this2.classData(resdata); // 取出ai分类数据
-        _this2.publicMess(resdata); // 取出留言列表
+        _this2.classData(resdata); // 把数据拿去做ai分类处理
+        _this2.publicMess(resdata); // 处理留言数据和赋值
       }).
       catch(function (err) {
         console.log(err);
@@ -246,7 +246,7 @@ var _default = {
         console.log(err);
       });
     },
-    // 公用map查询分类留言数据
+    // 处理拿到的留言数据
     publicMess: function publicMess(resdata) {
       var leaveword = resdata.map(function (item) {
         return item.messagedata;
@@ -258,7 +258,7 @@ var _default = {
         this.nonedata = false;
       }
     },
-    // 取出ai分类留言数据
+    // 处理数据所属的ai分类
     classData: function classData(resdata) {
       var messageword = resdata.map(function (item) {
         return item.classmessage;
@@ -290,7 +290,7 @@ var _default = {
       }
     } },
 
-  // 监听页面滚动距离scrollTop
+  // 监听页面滚动距离scrollTop->实时更新动态样式
   onPageScroll: function onPageScroll(e) {
     var top = e.scrollTop;
     this.handleScroll(top);

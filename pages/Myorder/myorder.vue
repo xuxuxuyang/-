@@ -50,27 +50,26 @@
 		},
 		data() {
 			return {
-				homeload:true,
-				orderData:[]
+				homeload:true,//默认显示无数据提示
+				orderData:[] //完成订单展示的数据
 			}
 		},
 		methods:{
+			// 获取订单数据方法
 			myOrder(){
 				let wxData = {type:'myorder'}
 				wxpay(wxData)
 				.then((res)=>{
 					let myorderdata = res.result.result.data
-					// 取消loading
-					this.homeload = false
+					this.homeload = false// 隐藏没有数据的loading
 					if(myorderdata.length === 0){
 						let value = true
-						let orderdata = '订单空空如也！'
-						this.nohint(value,orderdata)
+						let orderdata = '无订单'
+						this.nohint(value,orderdata)//显示无订单提示+设置提示文字
 					}else{
-						// 取出要展示的数据
-						var ordering = myorderdata.map((item)=>{
-							let orderdtata = item.Paymentinfor.arrinfo
-							let total = item.total_fee
+						var ordering = myorderdata.map((item)=>{// 取出要展示的数据
+							let orderdtata = item.Paymentinfor.arrinfo //订单需要的展示部分数据
+							let total = item.total_fee //订单总价格
 							return {
 								orderdtata,
 								total
@@ -84,7 +83,7 @@
 					console.log(err)
 				})
 			},
-			// 提示没有数据的
+			// 没有数据的处理方法
 			nohint(value,orderdata){
 				this.$nextTick(()=>{   //dom更新循环结束之后的延迟回调
 					this.$refs.orderlisty.init(value,orderdata)
@@ -92,7 +91,7 @@
 			}
 		},
 		mounted() {
-			this.myOrder()
+			this.myOrder() //进入页面获取订单数据
 		}
 	}
 </script>

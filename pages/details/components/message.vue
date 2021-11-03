@@ -54,14 +54,13 @@
 </template>
 
 <script>
-	// 引入提示组件
-	import HMmessages from "@/components/HM-messages/HM-messages.vue"
-	// 引入模态组件
-	import motal from '../../../element/modal.vue'
+	import HMmessages from "@/components/HM-messages/HM-messages.vue"// 引入提示组件
+	import motal from '../../../element/modal.vue'// 引入模态组件
+	
 	var util = require('../../../common/util.js');
-	var time = util.formatTime(new Date());
-	// 引入数据库
-	var db = wx.cloud.database()
+	var time = util.formatTime(new Date()); //当前时间
+	
+	var db = wx.cloud.database()// 引入数据库
 	var users = db.collection('user')
 	export default{
 		name:'messages',
@@ -78,7 +77,7 @@
 			return {
 				btnlist:true,// 禁掉发表按钮
 				num:0, //控制分类的样式
-				Comment:'',//评价内容
+				Comment:'',//用户评价内容
 				newmessage:[],  //重组的的分类数组
 				box:false,  //隐藏评论框
 				avatarUrl:'',//用户头像
@@ -93,7 +92,7 @@
 				.then((res)=>{
 				  if(res.data.length == 0){// length == 0说明没有用户信息，没有登录，提示登录
 					  this.$nextTick(()=>{
-					  	this.$refs.mon.init()
+					  	this.$refs.mon.init() //弹出登录框
 					  })
 				  }else{
 					let usermen = res.data[0]
@@ -155,7 +154,7 @@
 				})
 				
 			},
-			// 提交到数据库
+			// 提交ai分类+评论到数据库
 			messbase(classif){
 				return new Promise((resolve,reject)=>{
 					// 以对象形式提交

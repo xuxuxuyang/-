@@ -65,16 +65,13 @@
 			userlogin(listing){
 				users.get()
 				.then((res)=>{
-					// length == 0说明没有用户信息，没有登录，提示登录
-				  if(res.data.length == 0){
+				  if(res.data.length == 0){// length == 0说明没有用户信息，没有登录，提示登录
 					  this.$nextTick(()=>{
 					  	this.$refs.mon.init()
 					  })
 				  }else{
-					  // 已经登录
-					// 跳转到商品确认页面带上用户选择购物车还是直接购买以及api数据
 					let ids = {
-						Shoppdata:this.Shoppdata,
+						Shoppdata:this.Shoppdata,// 跳转到商品确认页面带上用户选择购物车还是直接购买以及api数据
 						listing
 					}
 					let objids = JSON.stringify(ids)

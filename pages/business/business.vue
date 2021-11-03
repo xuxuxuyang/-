@@ -57,7 +57,7 @@
 			return {
 				showAbs:true, //控制nav导航栏的显示
 				styleObject:0, //实时控制动态样式 透明度
-				detaildata:{}, //具体留言数据
+				detaildata:{}, //商品所有的数据
 				leaveword:[], //留言数据数组
 				messageword:[],// 百度ai留言分类数组
 				nonedata:false,//控制留言数据为空提示
@@ -88,7 +88,7 @@
 					//Object.assign()接口可以接收多个参数，第一个参数是目标对象，后面的都是源对象，assign方法将多个原对象的属性和方法都合并到了目标对象上面，
 					//如果在这个过程中出现同名的属性（方法），后合并的属性（方法）会覆盖之前的同名属性（方法）
 					let obgdata = Object.assign(res.data[0].wholedata ,shopid);
-					this.detaildata = obgdata //具体留言数据赋值新对象
+					this.detaildata = obgdata //具体商品的所有数据赋值新对象
 					this.homeload = false //获取到数据后 隐藏页面loding
 				})
 				.catch((err)=>{

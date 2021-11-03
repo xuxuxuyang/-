@@ -32,7 +32,7 @@
 		methods:{
 			init(){
 			    this.modaishow = true
-				return '阿里巴巴'
+				return '登录'
 			},
 			messcancel(){
 				this.modaishow = false

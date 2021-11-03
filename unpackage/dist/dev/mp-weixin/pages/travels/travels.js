@@ -213,7 +213,7 @@ var _vuex = __webpack_require__(/*! vuex */ 14);function _interopRequireDefault(
 var util = __webpack_require__(/*! ../../common/util.js */ 59);
 var time = util.formatTime(new Date());
 // 引入弹窗组件
-var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure | components/HM-messages/HM-messages */ "components/HM-messages/HM-messages").then((function () {return resolve(__webpack_require__(/*! @/components/HM-messages/HM-messages.vue */ 240));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var motal = function motal() {Promise.all(/*! require.ensure | element/modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("element/modal")]).then((function () {return resolve(__webpack_require__(/*! ../../element/modal.vue */ 247));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure | components/HM-messages/HM-messages */ "components/HM-messages/HM-messages").then((function () {return resolve(__webpack_require__(/*! @/components/HM-messages/HM-messages.vue */ 239));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var motal = function motal() {Promise.all(/*! require.ensure | element/modal */[__webpack_require__.e("common/vendor"), __webpack_require__.e("element/modal")]).then((function () {return resolve(__webpack_require__(/*! ../../element/modal.vue */ 246));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 var db = wx.cloud.database();

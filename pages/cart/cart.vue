@@ -4,7 +4,6 @@
 		<view class="cart-view">
 			<view class="cart-date">出发日期</view>
 			<view class="cart-flex">
-				<view>当前日期</view>
 				<view>
 					<picker mode="date" :value="date" :start="startDate" :end="endDate" @change="bindDateChange">
 						<view class="uni-input">{{datetime}}</view>
@@ -63,40 +62,35 @@
 		data() {
 			return {
 				num:-1,
-				// 取到要提交的数据到数据库
-				datetime: '2021-11-11',
+				datetime: '点击选择日期', //出发时间
 				departure:'',  //出发地
-				commodity:{},
-				btndata:'',
-				// 商品单价
-				unitPrice:'',
-				// 商品总价
-				totalPrice:'',
-				// 购买几个
-				many:1,
+				commodity:{},//所有商品数据
+				btndata:'',//控制显示加入购物车按钮 还是 立即购买按钮
+				unitPrice:'',// 商品单价
+				totalPrice:'',// 商品总价
+				many:1,// 下单数
 			}
 		},
 		methods:{
+			// 选择日期方法
 			bindDateChange(e) {
-				this.datetime = e.target.value
+				this.datetime = e.target.value //赋值选择的日期
 			},
 			// 选择出发地
 			menubtn(item,index){
 				this.num = index
 				this.departure = item
 			},
-			// 加价格
+			// 点击增加购买数量
 			plus(){
 				// 计算总价,首先购买几件数量要变
 				this.many++
 				let numdata = this.unitPrice * this.many
 				this.totalPrice = parseFloat((numdata).toFixed(10))
 			},
-			// 减价格
+			// 点击减少购买数量
 			reduce(){ 
-				// 不能为零
-				if(this.many === 1){ 
-					// 给予提示
+				if(this.many === 1){ // 购买数量不能为零
 					let tip = '购买数量最少为1'
 					let icon = 'danger'
 					this.tips(tip,icon)
@@ -127,19 +121,17 @@
 			},
 			// 提交按钮
 			btnShopping(datas){
-				// 要提交的是否为空
-				if(this.departure == ''){
+				if(this.departure == ''){  //提交前校验
 					// 给予提示
 					let tip = '请选择出发地'
 					let icon = 'danger'
 					this.tips(tip,icon)
 				}else{
-					if(datas == '加入购物车'){
-						// 加入云数据库
-						this.carTdata()
+					if(datas == '加入购物车'){ //点击加入购物车
+						this.carTdata()// 调用加入购物车的商品 存入云数据库方法
 					}else{
 						let ids = {
-							orderdata:[this.pubilcData()],
+							orderdata:[this.pubilcData()], //使用[]号解出数据
 							page:'directorder'
 						}
 						let objids = JSON.stringify(ids)
@@ -161,15 +153,12 @@
 				})
 				.get()
 				.then((res)=>{
-					// 1.查询数据库如果为空直接添加进去
-					if(res.data.length == 0){
+					if(res.data.length == 0){// 1.查询数据库如果为空直接添加进去
 						this.forMaldata()
 						return
 					}
-					// 2.数据库里有数据并且用户提交的数据和数据库数据相同，不添加
-					if(res.data.length != 0){
-						// 查询数据库时候存在相同的数据，如果出现某一个相同则不提交，
-						shopdatabase.where({
+					if(res.data.length != 0){// 2.数据库里有数据并且用户提交的数据和数据库数据相同，不添加
+						shopdatabase.where({// 查询数据库时候存在相同的数据，如果出现某一个相同则不提交，
 							shopid:this.commodity.shopid,
 							datetime:this.datetime,
 							departure: this.departure,
@@ -178,9 +167,7 @@
 						})
 						.get()
 						.then((res)=>{
-							// 出现相同数据不提交
-							if(res.data.length != 0){
-								// 给予提示
+							if(res.data.length != 0){ // 出现相同数据不提交
 								let tip = '加入购物车成功'
 								let icon = 'success'
 								this.tips(tip,icon)
@@ -199,7 +186,7 @@
 					console.log(err)
 				})
 			},
-			// 出发时间和出发地一致
+			// 出发时间和出发地一致的数据 处理方法
 			timeing(){
 				shopdatabase.where({
 					shopid:this.commodity.shopid,
@@ -209,8 +196,7 @@
 				.get()
 				.then((res)=>{
 					if(res.data.length != 0){
-						// 存在出发日期和出发地相同的数据
-						this.toUpdate(res.data[0]._id)
+						this.toUpdate(res.data[0]._id)// 存在出发日期和出发地相同的数据
 					}else{
 						this.forMaldata()
 					}
@@ -219,16 +205,15 @@
 					console.log(err)
 				})
 			},
+			// 存在出发日期和出发地相同的数据 处理方法
 			toUpdate(id){
-				// 出发时间和出发地一致更新该条数据的购买数量和总价即可
-				shopdatabase.doc(id).update({
+				shopdatabase.doc(id).update({// 出发时间和出发地一致更新该条数据的购买数量和总价即可
 					data: {
 					    many:this.many,
 						totalPrice:this.totalPrice
 					  }
 				})
 				.then((res)=>{
-					// 给予提示
 					let tip = '加入购物车成功'
 					let icon = 'success'
 					this.tips(tip,icon)
@@ -237,13 +222,12 @@
 					console.log(err)
 				})
 			},
-			// 正式提交数据到数据库
+			// 数据全部校验完成 正式提交数据到数据库的方法
 			forMaldata(){
 				shopdatabase.add({
 					data:this.pubilcData()
 				})
 				.then((res)=>{
-					// 给予提示
 					let tip = '加入购物车成功'
 					let icon = 'success'
 					this.tips(tip,icon)
@@ -259,20 +243,14 @@
 		},
 		// 接收值
 		onLoad(e) {
-			let ids = JSON.parse(e.ids)
-			// 商品数据
-			this.commodity = ids.Shoppdata
-			// 商品单价
-			this.unitPrice = Number(this.commodity.price)
-			// 初次进入页面商品总价等于单价
-			this.totalPrice = Number(this.commodity.price)
-			// 是购物车还是立即下单
-			if(ids.listing == "shopping"){
-				// 加入购物车
-				this.btndata = '加入购物车'
+			let ids = JSON.parse(e.ids) //该商品所有的数据
+			this.commodity = ids.Shoppdata// 赋值商品数据
+			this.unitPrice = Number(this.commodity.price)// 商品单价
+			this.totalPrice = Number(this.commodity.price)// 初次进入页面商品总价等于单价
+			if(ids.listing == "shopping"){// 判断点击那个按钮
+				this.btndata = '加入购物车'// 按钮显示加入购物车
 			}else{
-				// 立即下单
-				this.btndata = '立即下单'
+				this.btndata = '立即下单'// 按钮显示立即下单
 			}
 		}
 	}

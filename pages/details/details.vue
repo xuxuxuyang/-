@@ -35,7 +35,7 @@
 	import {mapState} from 'vuex'
 
 	var db = wx.cloud.database() // 引入数据库
-	var listdata = db.collection('userdata')
+	var listdata = db.collection('userdata')//用户发表数据库
 	var messdatabase = db.collection('message')// 留言数据库
 	export default{
 		components:{
@@ -46,18 +46,18 @@
 		},
 		data() {
 			return {
-				showAbs:true,
-				styleObject:0,
-				detaildata:{},
-				leaveword:[],
-				messageword:[],// 分类留言
-				nonedata:false,
+				showAbs:true, //控制nav是否显示
+				styleObject:0, //动态控制nav样式
+				detaildata:{},//用户分享数据
+				leaveword:[], //具体留言数据数组
+				messageword:[],// ai留言分类数组
+				nonedata:false,//控制没有留言的提示是否显示
 				detaid:'',  //列表页传过来的id
-				homeload:true
+				homeload:true //控制进入页面执行的loading
 			}
 		},
 		methods:{
-			// 动态改变nav样式属性方法
+			// 动态改变nav样式opacity属性方法
 			handleScroll(top){
 				if(top > 90){
 					let opacity = top / 170
@@ -91,8 +91,8 @@
 				.get()
 				.then((res)=>{
 					let resdata = res.data
-					this.classData(resdata)// 取出ai分类数据
-					this.publicMess(resdata)// 取出留言列表
+					this.classData(resdata)// 把数据拿去做ai分类处理
+					this.publicMess(resdata)// 处理留言数据和赋值
 				})
 				.catch((err)=>{
 					console.log(err)
@@ -114,7 +114,7 @@
 					console.log(err)
 				})
 			},
-			// 公用map查询分类留言数据
+			// 处理拿到的留言数据
 			publicMess(resdata){
 				var leaveword = resdata.map((item)=>{
 					return item.messagedata
@@ -126,7 +126,7 @@
 					this.nonedata = false
 				}
 			},
-			// 取出ai分类留言数据
+			// 处理数据所属的ai分类
 			classData(resdata){
 				var messageword = resdata.map((item)=>{
 					return item.classmessage
@@ -158,7 +158,7 @@
 				}
 			}
 		},
-		// 监听页面滚动距离scrollTop
+		// 监听页面滚动距离scrollTop->实时更新动态样式
 		onPageScroll (e){
 			let top = e.scrollTop
 			this.handleScroll(top)
