@@ -2056,9 +2056,9 @@ uni$1;exports.default = _default;
 /***/ }),
 
 /***/ 108:
-/*!*********************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/common/erring.js ***!
-  \*********************************************************************/
+/*!*********************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/common/erring.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2102,9 +2102,9 @@ var erring = function erring(name, phone, carded) {
 /***/ }),
 
 /***/ 109:
-/*!********************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/common/wxpay.js ***!
-  \********************************************************************/
+/*!********************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/common/wxpay.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2258,9 +2258,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 12:
-/*!*****************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/node_modules/animate.css/animate.css ***!
-  \*****************************************************************************************/
+/*!*****************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/node_modules/animate.css/animate.css ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2271,9 +2271,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 13:
-/*!*************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/pages/store/store.js ***!
-  \*************************************************************************/
+/*!*************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/store/store.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3681,9 +3681,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 21:
-/*!***********************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/common/cloudfun.js ***!
-  \***********************************************************************/
+/*!***********************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/common/cloudfun.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9784,9 +9784,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 30:
-/*!*******************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/common/list.js ***!
-  \*******************************************************************/
+/*!*******************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/common/list.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9858,9 +9858,9 @@ exports.addressdata = addressdata;var login = function login(user) {
 /***/ }),
 
 /***/ 31:
-/*!*********************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/common/qqmap-wx-jssdk.min.js ***!
-  \*********************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/common/qqmap-wx-jssdk.min.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10333,9 +10333,9 @@ function resolveLocaleChain(locale) {
 /***/ }),
 
 /***/ 5:
-/*!***************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/pages.json ***!
-  \***************************************************************/
+/*!***************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages.json ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -11135,9 +11135,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 59:
-/*!*******************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/common/util.js ***!
-  \*******************************************************************/
+/*!*******************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/common/util.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

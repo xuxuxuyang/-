@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/MyCart/mycart"],{
 
 /***/ 100:
-/*!*************************************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue?vue&type=style&index=0&id=0406a806&scoped=true&lang=css& ***!
-  \*************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue?vue&type=style&index=0&id=0406a806&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -17,9 +17,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 101:
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue?vue&type=style&index=0&id=0406a806&scoped=true&lang=css& ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--6-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--6-oneOf-1-2!./node_modules/postcss-loader/src??ref--6-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue?vue&type=style&index=0&id=0406a806&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30,9 +30,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 94:
-/*!***********************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/main.js?{"page":"pages%2FMyCart%2Fmycart"} ***!
-  \***********************************************************************************************/
+/*!***********************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/main.js?{"page":"pages%2FMyCart%2Fmycart"} ***!
+  \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -46,9 +46,9 @@ createPage(_mycart.default);
 /***/ }),
 
 /***/ 95:
-/*!****************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue ***!
-  \****************************************************************************/
+/*!****************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -87,9 +87,9 @@ component.options.__file = "pages/MyCart/mycart.vue"
 /***/ }),
 
 /***/ 96:
-/*!***********************************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue?vue&type=template&id=0406a806&scoped=true& ***!
-  \***********************************************************************************************************************/
+/*!***********************************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue?vue&type=template&id=0406a806&scoped=true& ***!
+  \***********************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -109,9 +109,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 97:
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue?vue&type=template&id=0406a806&scoped=true& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue?vue&type=template&id=0406a806&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -149,9 +149,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 98:
-/*!*****************************************************************************************************!*\
-  !*** C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -165,9 +165,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 99:
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/pages/MyCart/mycart.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!C:/Users/Administrator/Desktop/github/flypig/flypig-user/pages/MyCart/mycart.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -260,18 +260,17 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
 
   data: function data() {
     return {
-      mycary: false,
-      homeload: true,
-      samllload: false,
-      alldats: 'hide',
-      labfale: false,
-      editdata: '编辑',
-      shopbottom: true,
-      current: '',
-      indexArray: [],
-      shoplist: [],
-      // 监听全选和取消全选
-      select: '',
+      mycary: false, //控制数据是否显示
+      homeload: true, //页面loding
+      samllload: false, //选中切换的小loading
+      alldats: 'hide', //默认商品不选中
+      labfale: false, //控制是否可以点击删除和去下单
+      editdata: '编辑', //默认显示可编辑
+      shopbottom: true, //控制是否显示 去下单
+      current: '', //是否选中标识
+      indexArray: [], // 选中的数据的id数组
+      shoplist: [], //商品数据
+      select: '', // 监听全选和取消全选
       obtainprice: 0, //点击单个得到的总价
       arrtotalPrice: [], //点击得到的总价数组
       fandsdata: {}, //全选push进的id和价格
@@ -279,13 +278,11 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
     };
   },
   methods: {
-    // 取到购物车数据
+    // 请求购物车数据库数据
     finalchange: function finalchange() {var _this = this;
       shopdatabase.get().
       then(function (res) {
-        // 是否有数据，没有显示提示
-        if (res.data.length === 0) {
-          // 整个loading显示
+        if (res.data.length === 0) {// 是否有数据，没有显示提示
           _this.homeload = false;
           _this.mycary = false;
           var value = true;
@@ -332,19 +329,18 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
       shopdatabase.get().
       then(function (res) {
         if (res.data.length != 0) {
-          // 弹出提示
           _this3.shoplist = res.data;
           _this3.mycary = true;
           var value = false;
           var orderdata = '';
-          _this3.nohint(value, orderdata);
+          _this3.nohint(value, orderdata); // 弹出提示
           _this3.homeload = false;
           return;
         } else {
           _this3.mycary = false;
           var _value = true;
           var _orderdata = '购物车空空如也！';
-          _this3.nohint(_value, _orderdata);
+          _this3.nohint(_value, _orderdata); // 弹出提示
           _this3.homeload = false;
         }
       }).
@@ -352,7 +348,7 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
         console.log(err);
       });
     },
-    // 删除购物车
+    // 编辑删除购物车商品
     eDit: function eDit() {
       this.editdata = this.editdata == '完成' ? '编辑' : '完成';
       if (this.editdata == '完成') {
@@ -361,41 +357,33 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
         this.shopbottom = true;
       }
     },
-    // 选中
+    // 选中商品
     radioLin: function radioLin(current, id, totalPrice) {
-      // 选中图标显示load
-      this.samllload = true;
-      // 未选中图标变选中
+      this.samllload = true; // 选中图标显示loading
       if (current == 'hide') {
         var ldlist = 'show';
-        this.selecTion(ldlist, id);
-        // 把选中的数据的id放在数组里
-        // 	// 创建一个数组
-        this.indexArray.push(id);
-        // 取到总价
-        // 创建一个数组对象，把得到的总价和当前id放到数组里，每点击一个依次遍历相加，【数组求和】
-        var fands = {
+        this.selecTion(ldlist, id); //调用改变数据库是否选中标识方法
+        this.indexArray.push(id); // 把选中的数据的id放在数组里
+        var fands = { // 创建一个数组对象，把得到的总价和当前id放到数组里，每点击一个依次遍历相加，【数组求和】
           id: id,
           totalPrice: totalPrice };
 
         this.arrtotalPrice.push(fands);
       } else {
-        // 选中变未选中
-        var _ldlist = 'hide';
-        this.selecTion(_ldlist, id);
-        // 删除指定项
-        var indexkml = this.indexArray.indexOf(id);
-        this.indexArray.splice(indexkml, 1);
-        // 取到总价
-        // 取消单个选中找到对应id数组删掉[计算总价]
-        var arrid = [id];
-        var findarr = this.arrtotalPrice.filter(function (val) {
-          return !arrid.includes(val.id);
+        var _ldlist = 'hide'; // 选中变未选中
+        this.selecTion(_ldlist, id); //调用改变数据库是否选中标识方法
+        var indexkml = this.indexArray.indexOf(id); // 找到数组里具体某项
+        this.indexArray.splice(indexkml, 1); //删除指定项
+
+        var arrid = [id]; //把id放在数组里 ->["9e7190f161834b080398b95475381201"]
+        // filter用于对数组进行过滤。 它创建一个新数组,新数组中的元素是通过检查指定数组中符合条件的所有元素。 注意:filter()不会对空数组进行检测、不会改变原始数组
+        var findarr = this.arrtotalPrice.filter(function (val) {// 取消单个选中找到对应id数组删掉[计算总价]
+          return !arrid.includes(val.id); // includes() 方法用于判断字符串是否包含指定的子字符串
         });
         this.arrtotalPrice = findarr;
       }
     },
-    // 单个选中和未选中操作公用函数
+    // 单个选中和未选中操作数据库改变数据库标识方法
     selecTion: function selecTion(ldlist, id) {var _this4 = this;
       shopdatabase.doc(id).update({
         data: {
@@ -412,8 +400,7 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
     },
     // 删除选中的商品
     deleShop: function deleShop() {var _this5 = this;
-      // 加loading
-      this.samllload = true;
+      this.samllload = true; // 正在操作的loading
       this.indexArray.forEach(function (item) {
         shopdatabase.doc(item).remove().
         then(function (res) {
@@ -423,7 +410,6 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
             return !item.includes(val.id);
           });
           _this5.arrtotalPrice = findarr;
-          // 加loading
           _this5.samllload = false;
         }).
         catch(function (err) {
@@ -433,34 +419,28 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
     },
     // 全选和取消全选
     Allelection: function Allelection() {var _this6 = this;
-      // 全选图标加loading
       this.samllload = true;
-      //全选
       if (this.alldats == 'hide') {
         var show = 'show';
-        this.publicAll(show);
-        // 全选计算总价
-        this.shoplist.forEach(function (item) {
+        this.publicAll(show); //全选
+        this.shoplist.forEach(function (item) {// 全选计算总价
           var fandsdata = {
             id: item._id,
             totalPrice: item.totalPrice };
 
           _this6.arrtotalPrice.push(fandsdata);
-          // 把id添加进数组，方便全体删除，添加时数组去重
-          _this6.Duplicate.push(item._id);
-          _this6.indexArray = Array.from(new Set(_this6.Duplicate));
+          _this6.Duplicate.push(item._id); // 把id添加进数组
+          _this6.indexArray = Array.from(new Set(_this6.Duplicate)); //方便全体删除，添加时数组去重
         });
       } else {
         var _show = 'hide';
         this.publicAll(_show);
-        // 取消全选计算总价
-        this.obtainprice = 0;
+        this.obtainprice = 0; // 取消全选计算总价
         this.arrtotalPrice = [];
-        // 清空装有id值的数组
-        this.indexArray = [];
+        this.indexArray = []; // 清空装有id值的数组
       }
     },
-    // 全选和取消全选的公用函数
+    // 全选和取消全选的操作方法
     publicAll: function publicAll(show) {var _this7 = this;
       var frequency = 0;
       this.shoplist.forEach(function (item) {
@@ -545,8 +525,7 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
     },
     // 下单
     placEorder: function placEorder() {
-      // 携带总价和这是购物页面跳转的
-      var ids = {
+      var ids = { // 携带总价和这是购物页面跳转的
         obtainprice: this.obtainprice,
         page: 'Shopping' };
 
@@ -566,9 +545,8 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
       });
     } },
 
-  // 取到购物车数据
   mounted: function mounted() {
-    this.finalchange();
+    this.finalchange(); // 调用购物车数据库
   },
   computed: {
     // 监听如果未选中任何一个禁用删除按钮和下单按钮
@@ -588,15 +566,13 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
     },
     // 监听总价计算
     Calculation: function Calculation() {
-      // 数组对象去重
       var hash = {};
-      var hashdata = this.arrtotalPrice.reduce(function (preVal, curVal) {
+      var hashdata = this.arrtotalPrice.reduce(function (preVal, curVal) {// 数组对象去重
         hash[curVal.id] ? '' : hash[curVal.id] =  true && preVal.push(curVal);
         return preVal;
       }, []);
-      // 总价计算
       var numdata = 0;
-      hashdata.forEach(function (item) {
+      hashdata.forEach(function (item) {// 总价计算
         numdata += item.totalPrice;
       });
       this.obtainprice = parseFloat(numdata.toFixed(10));
@@ -604,9 +580,8 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
 
   watch: {
     select: function select(newValue, oldValue) {
-      // 判断数组里的Selection值是否都为同一个值
       var identical = newValue.every(function (item) {
-        return item === 'show';
+        return item === 'show'; // 判断数组里的Selection值是否都为同一个值
       });
       if (identical === true) {
         this.alldats = 'show';
