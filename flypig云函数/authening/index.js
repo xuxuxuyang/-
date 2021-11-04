@@ -2,7 +2,7 @@
 const cloud = require('wx-server-sdk')
 cloud.init({
   traceUser: true,
-  env: 'yuncloud-k0dms'
+  env: 'donghualigongdaxue-7drb78b870209'
 }
 )
 const db = cloud.database();

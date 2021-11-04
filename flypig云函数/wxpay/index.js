@@ -2,7 +2,7 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init({
-  env: 'yuncloud-k0dms'
+  env: 'donghualigongdaxue-7drb78b870209'
 })
 
 const {
@@ -12,9 +12,9 @@ const {
 } = require('wx-js-utils');
 const ip = require('ip');
 // 这里看微信支付文档，填写你自己的商户配置{小程序appId，商户号：mchId，商户k：key}
-const appId = 'wx404e88f75f32c85b'
-const mchId = '1523993881'
-const key = '530321199511250315gengzhiwoainiy'
+const appId = 'wxd6bf110575444ac9'
+const mchId = '1604007351'
+const key = 'xuyang1203xuyang1203xuyang1203xu'
 const timeout = 10000 // 毫秒
 const sign_type = WXPayConstants.SIGN_TYPE_MD5
 
